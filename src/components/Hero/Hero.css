@@ -13,6 +13,11 @@ header {
   background-attachment: fixed;
 }
 
+a {
+  color: white;
+  text-decoration: underline;
+}
+
 .attributes {
   position: absolute;
   bottom: 5%;
@@ -21,7 +26,5 @@ header {
   font-size: 13px;
 }
 
-a {
-  color: white;
-  text-decoration: underline;
+.hero-text {
 }

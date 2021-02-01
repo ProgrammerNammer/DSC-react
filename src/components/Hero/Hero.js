@@ -4,7 +4,7 @@ import "./Hero.css";
 const Hero = () => {
   return (
     <header>
-      <div>Main</div>
+      <div className="hero-text">DLSU Developers' powerhub</div>
       <div className="attributes">
         Background image by Ramiltibayan.
         <br />
