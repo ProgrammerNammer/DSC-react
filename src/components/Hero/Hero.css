@@ -12,3 +12,16 @@ header {
   background-position: center;
   background-attachment: fixed;
 }
+
+.attributes {
+  position: absolute;
+  bottom: 5%;
+  right: 3%;
+  color: white;
+  font-size: 13px;
+}
+
+a {
+  color: white;
+  text-decoration: underline;
+}
