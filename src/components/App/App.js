@@ -6,12 +6,13 @@ import "./App.css";
 class App extends React.Component {
   render() {
     return (
-      <div>
+      <body>
         <header className="hero">
           <Navigation />
           <Hero />
         </header>
-      </div>
+        <section>Sample</section>
+      </body>
     );
   }
 }

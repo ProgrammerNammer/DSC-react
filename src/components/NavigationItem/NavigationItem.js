@@ -4,7 +4,7 @@ import "./NavigationItem.css";
 class NavigationItem extends React.Component {
   state = { hoveredOn: false };
 
-  toggleHover = (e) => {
+  toggleHover = () => {
     this.setState({ hoveredOn: !this.state.hoveredOn });
   };
 
@@ -13,12 +13,10 @@ class NavigationItem extends React.Component {
 
     if (this.state.hoveredOn) {
       style = {
-        border: `10px solid ${this.props.itemHoverColor}`,
         backgroundColor: this.props.itemHoverColor,
       };
     } else {
       style = {
-        border: `10px solid transparent`,
         color: "white",
       };
     }

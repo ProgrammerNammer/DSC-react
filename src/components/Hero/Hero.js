@@ -1,15 +1,29 @@
 import React from "react";
 import "./Hero.css";
+import "./TypewriterCarousel";
+
+//   Typewrite word carousel list
+const wordList =
+  '["Empowering","Inspiring","Motivational","Come Out Of Shell","Socializing"]';
 
 const Hero = () => {
   return (
     <header>
-      <div className="hero-text">
-        <h1>
-          The DLSU GDG powerhub
+      <div className="hero-container">
+        <span className="hero-container__text--normal">
+          DLSU Developer Hub
           <br />
-          Your Empowering Environment
-        </h1>
+          Your
+        </span>
+        <span
+          href=""
+          className="typewrite hero-container__text--typewrite"
+          data-period="2000"
+          data-type={wordList}
+        >
+          <span className="wrap"></span>
+        </span>
+        <span className="hero-container__text--normal">Environment</span>
       </div>
       <div className="attributes">
         Background image by Ramiltibayan.
