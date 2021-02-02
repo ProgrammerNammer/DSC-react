@@ -1,0 +1,6 @@
+a {
+  text-decoration: none;
+  font-size: 120%;
+  font-weight: 300;
+  transition: border 0.2s, background 0.2s;
+}
