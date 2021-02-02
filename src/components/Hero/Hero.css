@@ -1,18 +1,3 @@
-* {
-  box-sizing: border-box;
-  margin: 0;
-  border: 0;
-}
-
-header {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 100, 0, 0.5)),
-    url(../../assets/images/DLSU-Manila-Campus.jpg);
-  height: 100vh;
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-}
-
 a {
   color: white;
   text-decoration: underline;
@@ -27,4 +12,16 @@ a {
 }
 
 .hero-text {
+  position: absolute;
+  top: 37%;
+  left: 16%;
+}
+
+.hero-text h1 {
+  color: white;
+  font-weight: 300;
+  font-size: 300%;
+  text-transform: uppercase;
+  word-spacing: 5px;
+  letter-spacing: 1px;
 }
