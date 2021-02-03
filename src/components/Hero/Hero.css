@@ -13,13 +13,13 @@ a {
 .hero-container {
   position: absolute;
   top: 37%;
-  left: 16%;
+  left: 10%;
 }
 
 .hero-container__text--normal {
   font-family: "Lato", sans-serif;
-  font-weight: 300;
-  font-size: 300%;
+  font-weight: 400;
+  font-size: 350%;
   text-transform: uppercase;
   word-spacing: 5px;
   letter-spacing: 1px;
@@ -28,8 +28,8 @@ a {
 
 .hero-container__text--typewrite {
   font-family: "Lato", sans-serif;
-  font-weight: 300;
-  font-size: 300%;
+  font-weight: 400;
+  font-size: 350%;
   color: white;
   text-transform: uppercase;
 }
