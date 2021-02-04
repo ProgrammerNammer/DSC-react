@@ -12,7 +12,7 @@ nav {
 }
 
 .navigation--sticky {
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.97);
   padding: 20px 0;
   position: fixed;
   display: flex;
