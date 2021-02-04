@@ -12,8 +12,10 @@ a {
 
 .hero-container {
   position: absolute;
-  top: 37%;
+  top: 33%;
   left: 10%;
+  display: flex;
+  flex-direction: column;
 }
 
 .hero-container__text--normal {
@@ -36,4 +38,15 @@ a {
 
 .typewrite {
   margin: 0 10px;
+}
+
+.member-count {
+  margin: 10px 0;
+  font-size: 130%;
+  color: white;
+}
+
+.baubles-list {
+  margin-top: 5px;
+  display: flex;
 }
