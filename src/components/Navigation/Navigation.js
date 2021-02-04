@@ -24,6 +24,37 @@ const navigationItems = [
 ];
 
 class Navigation extends React.Component {
+  listener = null;
+  state = {
+    stickyNavigation: false,
+  };
+
+  componentDidMount() {
+    window.addEventListener("scroll", this.toggleStickyNavigation);
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener("scroll");
+  }
+
+  toggleStickyNavigation = () => {
+    if (window.pageYOffset > 600) {
+      if (!this.state.stickyNavigation) {
+        this.setState({ stickyNavigation: true });
+      }
+    } else {
+      if (this.state.stickyNavigation) {
+        this.setState({ stickyNavigation: false });
+      }
+    }
+  };
+
+  renderNavigationState = () => {
+    if (this.state.stickyNavigation) {
+      return "navigation--sticky";
+    }
+  };
+
   renderNavigationItems = navigationItems.map((item) => {
     return (
       <div className="navigation-item">
@@ -37,7 +68,7 @@ class Navigation extends React.Component {
 
   render() {
     return (
-      <nav>
+      <nav className={this.renderNavigationState()}>
         <div className="navigation-logo">
           <span>DLSU GDG</span>
           <img src={GDGLogo} alt="DSC-Logo" />

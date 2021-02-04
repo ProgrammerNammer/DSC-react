@@ -11,6 +11,22 @@ nav {
   display: flex;
 }
 
+.navigation--sticky {
+  background-color: white;
+  padding: 20px 0;
+  position: fixed;
+  display: flex;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  box-shadow: 0 2px 10px #afafaf;
+}
+
+.navigation--sticky .navigation-logo span {
+  color: green;
+}
+
 .navigation-logo {
   margin-left: 5%;
 }
