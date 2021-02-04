@@ -38,7 +38,7 @@ class Navigation extends React.Component {
   }
 
   toggleStickyNavigation = () => {
-    if (window.pageYOffset > 600) {
+    if (window.pageYOffset > (this.state.stickyNavigation ? 0 : 600)) {
       if (!this.state.stickyNavigation) {
         this.setState({ stickyNavigation: true });
       }

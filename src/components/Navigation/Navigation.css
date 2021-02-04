@@ -7,7 +7,7 @@ nav img {
 nav {
   padding-top: 30px;
   display: flex;
-  transition: background 0.2s;
+  transition: background 0.5s;
   font-weight: 400;
 }
 
