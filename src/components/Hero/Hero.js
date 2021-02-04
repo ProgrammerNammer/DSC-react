@@ -21,15 +21,19 @@ const socialMediaBaubles = [
 ];
 
 const renderBaubles = socialMediaBaubles.map((item) => {
-  return <Bauble referenceLink={item.referenceLink} ionicon={item.ionicon} />;
+  return (
+    <div className="baubles-item">
+      <Bauble referenceLink={item.referenceLink} ionicon={item.ionicon} />
+    </div>
+  );
 });
 
 class Hero extends React.Component {
   /*  Note:
-   *   In future implementations, this will be integrated with
+   *   In future implementations, this state will be integrated with
    *   outside data which will turn this into an int data type
    */
-  state = { memberCount: "70+" };
+  state = { memberCount: "200+" };
 
   render() {
     return (

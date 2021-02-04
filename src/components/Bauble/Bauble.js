@@ -3,7 +3,7 @@ import "./Bauble.css";
 
 const Bauble = ({ referenceLink = "#", ionicon }) => {
   return (
-    <div>
+    <div className="baubles-container">
       <a
         href={referenceLink}
         target="_blank"
