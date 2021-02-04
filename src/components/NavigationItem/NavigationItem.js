@@ -2,29 +2,60 @@ import React from "react";
 import "./NavigationItem.css";
 
 class NavigationItem extends React.Component {
-  state = { hoveredOn: false };
+  state = { hoveredOn: false, stickyNavigationState: false };
 
   toggleHover = () => {
     this.setState({ hoveredOn: !this.state.hoveredOn });
   };
 
-  render() {
+  componentDidUpdate(prevProps) {
+    if (prevProps.stickyNavigationState !== this.props.stickyNavigationState) {
+      if (!this.state.stickyNavigationState) {
+        this.setState({
+          stickyNavigationState: true,
+        });
+      } else {
+        this.setState({
+          stickyNavigationState: false,
+        });
+      }
+    }
+  }
+
+  getStyle = () => {
     var style;
 
-    if (this.state.hoveredOn) {
+    if (this.state.hoveredOn && this.state.stickyNavigationState) {
       style = {
+        color: "white",
         backgroundColor: this.props.itemHoverColor,
       };
-    } else {
+    } else if (!this.state.hoveredOn && this.state.stickyNavigationState) {
+      style = {
+        color: this.props.itemHoverColor,
+      };
+    } else if (this.state.hoveredOn && !this.state.stickyNavigationState) {
+      style = {
+        color: "white",
+        backgroundColor: this.props.itemHoverColor,
+      };
+    } else if (!this.state.hoveredOn && !this.state.stickyNavigationState) {
       style = {
         color: "white",
       };
     }
 
+    if (this.state.stickyNavigationState) {
+      style.fontWeight = 400;
+    }
+    return style;
+  };
+
+  render() {
     return (
       <a
         href={this.props.source}
-        style={style}
+        style={this.getStyle()}
         onMouseEnter={this.toggleHover}
         onMouseLeave={this.toggleHover}
       >

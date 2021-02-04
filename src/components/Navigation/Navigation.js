@@ -55,25 +55,26 @@ class Navigation extends React.Component {
     }
   };
 
-  renderNavigationItems = navigationItems.map((item) => {
-    return (
-      <div className="navigation-item">
-        <NavigationItem
-          itemName={item.itemName}
-          itemHoverColor={item.itemHoverColor}
-        />
-      </div>
-    );
-  });
-
   render() {
+    const renderNavigationItems = navigationItems.map((item) => {
+      return (
+        <div className="navigation-item">
+          <NavigationItem
+            itemName={item.itemName}
+            itemHoverColor={item.itemHoverColor}
+            stickyNavigationState={this.state.stickyNavigation}
+          />
+        </div>
+      );
+    });
+
     return (
       <nav className={this.renderNavigationState()}>
         <div className="navigation-logo">
           <span>DLSU GDG</span>
           <img src={GDGLogo} alt="DSC-Logo" />
         </div>
-        <div className="navigation-list">{this.renderNavigationItems}</div>
+        <div className="navigation-list">{renderNavigationItems}</div>
       </nav>
     );
   }
