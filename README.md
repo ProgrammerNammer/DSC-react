@@ -1,6 +1,6 @@
-# DSC-react
-(image here)
+![Landing Page](landingpage.png)
 
+# DSC-react
 This is a test website. It is a take on DSC's website with a mix od HTML, CSS, and ReactJS
 
 ## Tools Used
