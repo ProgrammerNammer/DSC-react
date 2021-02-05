@@ -6,5 +6,6 @@
 1. Download and extract.
 2. Navigate to the directory
 3. Run the following code
-`npm install`
-`npm start`
+`npm install
+npm start`
+
