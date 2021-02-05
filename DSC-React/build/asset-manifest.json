@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/DSC-react/static/css/main.0ead96e7.chunk.css",
+    "main.js": "/DSC-react/static/js/main.3dc3aa74.chunk.js",
+    "main.js.map": "/DSC-react/static/js/main.3dc3aa74.chunk.js.map",
+    "runtime-main.js": "/DSC-react/static/js/runtime-main.cd31d771.js",
+    "runtime-main.js.map": "/DSC-react/static/js/runtime-main.cd31d771.js.map",
+    "static/js/2.77c4ec1f.chunk.js": "/DSC-react/static/js/2.77c4ec1f.chunk.js",
+    "static/js/2.77c4ec1f.chunk.js.map": "/DSC-react/static/js/2.77c4ec1f.chunk.js.map",
+    "index.html": "/DSC-react/index.html",
+    "static/css/main.0ead96e7.chunk.css.map": "/DSC-react/static/css/main.0ead96e7.chunk.css.map",
+    "static/js/2.77c4ec1f.chunk.js.LICENSE.txt": "/DSC-react/static/js/2.77c4ec1f.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/DSC-react/static/media/DLSU-Manila-Campus.da70497c.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.cd31d771.js",
+    "static/js/2.77c4ec1f.chunk.js",
+    "static/css/main.0ead96e7.chunk.css",
+    "static/js/main.3dc3aa74.chunk.js"
+  ]
+}
