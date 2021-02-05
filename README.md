@@ -1,4 +1,4 @@
-![Landing Page](landingpage.png)
+![Landing Page](./github-resources/landingpage.png)
 
 # DSC-react
 This is a test website. It is a take on DSC's website with a mix od HTML, CSS, and ReactJS
