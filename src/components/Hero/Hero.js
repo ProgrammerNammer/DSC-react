@@ -5,28 +5,13 @@ import "./TypewriterCarousel";
 
 /*  TODO:
  *    > Default word while Word Carousel is loading
+ *    > Colored Text. Color palette uses Google colors
+ *    > Standardized socialMediaBaubles render
  */
 
 //  Typewrite word carousel list
 const wordList =
   '["Empowering","Inspiring","Motivational","Come Out Of Shell","Socializing"]';
-
-//  Social Media Links
-const socialMediaBaubles = [
-  { referenceLink: "#", ionicon: "logo-twitter" },
-  { referenceLink: "#", ionicon: "logo-discord" },
-  { referenceLink: "#", ionicon: "logo-linkedin" },
-  { referenceLink: "#", ionicon: "logo-github" },
-  { referenceLink: "#", ionicon: "mail-outline" },
-];
-
-const renderBaubles = socialMediaBaubles.map((item) => {
-  return (
-    <div className="baubles-item">
-      <Bauble referenceLink={item.referenceLink} ionicon={item.ionicon} />
-    </div>
-  );
-});
 
 class Hero extends React.Component {
   /*  Note:
@@ -34,6 +19,18 @@ class Hero extends React.Component {
    *   outside data which will turn this into an int data type
    */
   state = { memberCount: "200+" };
+
+  renderBaubles = this.props.socialMediaBaubles.map((item) => {
+    return (
+      <div className="hero-container__bauble-item">
+        <Bauble
+          referenceLink={item.referenceLink}
+          ionicon={item.ionicon}
+          withBauble={true}
+        />
+      </div>
+    );
+  });
 
   render() {
     return (
@@ -55,8 +52,10 @@ class Hero extends React.Component {
             </span>
             <span className="hero-container__text--normal">Environment</span>
           </div>
-          <span className="member-count">{`${this.state.memberCount} Organization Members`}</span>
-          <div className="baubles-list">{renderBaubles}</div>
+          <span className="hero-container__member-count">{`${this.state.memberCount} Organization Members`}</span>
+          <div className="hero-container__baubles-list">
+            {this.renderBaubles}
+          </div>
         </div>
         <div className="attributes">
           Background image by Ramiltibayan.

@@ -2,7 +2,17 @@ import React from "react";
 import Hero from "../Hero/Hero";
 import Navigation from "../Navigation/Navigation";
 import SectionAboutUs from "../SectionAboutUs/SectionAboutUs";
+import Footer from "../Footer/Footer";
 import "./App.css";
+
+//  Social Media Links
+const socialMediaBaubles = [
+  { referenceLink: "#", ionicon: "logo-twitter", itemHoverColor: "#1da1f2" },
+  { referenceLink: "#", ionicon: "logo-discord", itemHoverColor: "#7289da" },
+  { referenceLink: "#", ionicon: "logo-linkedin", itemHoverColor: "#0a66c2" },
+  { referenceLink: "#", ionicon: "logo-github", itemHoverColor: "#24292d" },
+  { referenceLink: "#", ionicon: "mail-outline", itemHoverColor: "#ea4335" },
+];
 
 class App extends React.Component {
   render() {
@@ -10,9 +20,10 @@ class App extends React.Component {
       <div>
         <header className="hero">
           <Navigation />
-          <Hero />
+          <Hero socialMediaBaubles={socialMediaBaubles} />
         </header>
         <SectionAboutUs />
+        <Footer socialMediaBaubles={socialMediaBaubles} />
       </div>
     );
   }

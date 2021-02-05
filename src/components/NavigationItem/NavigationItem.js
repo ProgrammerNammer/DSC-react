@@ -58,6 +58,7 @@ class NavigationItem extends React.Component {
         style={this.getStyle()}
         onMouseEnter={this.toggleHover}
         onMouseLeave={this.toggleHover}
+        className="navigation-item"
       >
         {this.props.itemName}
       </a>

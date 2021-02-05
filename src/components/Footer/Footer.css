@@ -1,0 +1,32 @@
+footer {
+  height: 100px;
+  background-color: #17171a;
+  position: relative;
+  display: flex;
+  align-self: center;
+  justify-content: center;
+}
+
+footer div p {
+  color: #8f8f8f;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.footer-container__baubles-list {
+  font-size: 150%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  position: absolute;
+  right: 3%;
+  top: 15%;
+}
+
+.baubles-list__bauble-item {
+  margin-right: 10px;
+}
