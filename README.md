@@ -1,7 +1,6 @@
 ![Landing Page](./github-resources/landingpage.png)
-
 # DSC-react
-This is a test website. It is a take on DSC's website with a mix od HTML, CSS, and ReactJS
+The website can be visited [through this link](https://programmernammer.github.io/DSC-react/). This repository represents a take on the DLSU DSC Organization website for recuiting onlooking members - the site represents the Organization's 
 
 ## Tools Used
 Developed mainly on ReactJS
