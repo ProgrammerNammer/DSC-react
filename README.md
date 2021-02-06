@@ -10,11 +10,11 @@ The website can be visited [through this link](https://programmernammer.github.i
 
 ## Want to have your own take on the design?
 1. Fork the Repository
-2. Create a new branch.
-On the Git Bash `git checkout -b branch-name`
+2. Create a new branch. On the Git Bash, it can be achieved via `git checkout -b branch-name`
 3. Make the appropriate changes
-4. Commit your changes
-
+4. Commit your changes to your local repository. On the Git Bash, it can be achieved via `git add *`, then `git commit -m "Message Here"`
+5. Push your updated local repository to your remote repository. On the Git Bash, it can be achieved via `git push origin branch-name`
+6. Open a Pull Request
 
 ## Features To-Be-Implemented
 * Colored Word Carousel
@@ -28,9 +28,8 @@ On the Git Bash `git checkout -b branch-name`
   * Projects done & Events hosted
 * Plug Social Media Links
 
-
 ## Bugs
 If a bug is encountered, please do not hesitate to [open a new issue here](https://github.com/ProgrammerNammer/DSC-react/issues/new). Include what the circumstances were and any other information needed in replicating your issue. Remember, a well-documented Bug Report is as good as a solved one! 
 
 ## Feature Request
-Have an interesting/not idea on mind? Do not hesitate to suggest it here.
+Have an interesting/not interesting idea on mind? Do not hesitate to suggest it here - please be thorough with your suggestion, what are you - the viewer - expecting to see? Lastly, make sure to tag/label your issue as 'suggestion'.
