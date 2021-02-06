@@ -1,0 +1,56 @@
+a {
+  color: white;
+}
+
+.attributes {
+  position: absolute;
+  bottom: 5%;
+  right: 3%;
+  color: white;
+  font-size: 13px;
+}
+
+.hero-container {
+  position: absolute;
+  top: 30%;
+  left: 10%;
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-container__text--normal {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 350%;
+  text-transform: uppercase;
+  word-spacing: 5px;
+  letter-spacing: 1px;
+  color: white;
+}
+
+.hero-container__text--typewrite {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 350%;
+  color: white;
+  text-transform: uppercase;
+}
+
+.typewrite {
+  margin: 0 10px;
+}
+
+.hero-container__member-count {
+  margin: 10px 0;
+  font-size: 130%;
+  color: white;
+}
+
+.hero-container__baubles-list {
+  margin-top: 20px;
+  display: flex;
+}
+
+.hero-container__bauble-item {
+  margin-right: 15px;
+}

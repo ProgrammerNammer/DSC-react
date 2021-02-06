@@ -1,0 +1,8 @@
+.navigation-item {
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 105%;
+  transition: border 0.2s, background 0.175s;
+  padding: 15px 10px;
+  white-space: nowrap;
+}
