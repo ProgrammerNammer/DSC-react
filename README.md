@@ -1,4 +1,5 @@
-![Landing Page](./github-resources/landingpage.png)
+
+[![Landing Page](./github-resources/landingpage.png)](https://programmernammer.github.io/DSC-react/)
 # DSC-react
 The website can be visited [through this link](https://programmernammer.github.io/DSC-react/). This repository represents a take on the DLSU DSC Organization website for recuiting onlooking members - the site represents the Organization's 
 
