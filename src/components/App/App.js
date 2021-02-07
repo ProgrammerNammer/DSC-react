@@ -2,6 +2,7 @@ import React from "react";
 import Hero from "../Hero/Hero";
 import Navigation from "../Navigation/Navigation";
 import SectionAboutUs from "../SectionAboutUs/SectionAboutUs";
+import SectionTechnologyStack from "../SectionTechnologyStack/SectionTechnologyStack";
 import Footer from "../Footer/Footer";
 import "./App.css";
 
@@ -23,6 +24,7 @@ class App extends React.Component {
           <Hero socialMediaBaubles={socialMediaBaubles} />
         </header>
         <SectionAboutUs />
+        <SectionTechnologyStack />
         <Footer socialMediaBaubles={socialMediaBaubles} />
       </div>
     );
