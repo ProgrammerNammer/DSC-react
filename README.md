@@ -19,10 +19,6 @@ The website can be visited [through this link](https://programmernammer.github.i
 
 ## Features To-Be-Implemented
 * Colored Word Carousel
-* Content
-  * About Us
-    * Vision
-    * Mission
   * Technology Stacks Used
   * Members
   * Member Annotations
