@@ -44,7 +44,7 @@ class Bauble extends React.Component {
           className="baubles"
           style={this.getStyle()}
         >
-          <ion-icon name={this.props.ionicon}></ion-icon>
+          <ion-icon name={this.props.ionicon} />
         </a>
       </div>
     );

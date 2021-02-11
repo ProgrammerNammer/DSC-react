@@ -71,7 +71,7 @@ class Navigation extends React.Component {
     return (
       <nav className={this.renderNavigationState()}>
         <div className="navigation-logo">
-          <span>DLSU GDG</span>
+          <span>DLSU DSC</span>
           <img src={GDGLogo} alt="DSC-Logo" />
         </div>
         <div className="navigation-list">{renderNavigationItems}</div>
