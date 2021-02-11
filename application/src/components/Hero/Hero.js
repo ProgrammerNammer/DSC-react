@@ -7,16 +7,6 @@ import "./TypewriterCarousel";
  *    > Default word while Word Carousel is loading
  *    > Colored Text. Color palette uses Google colors
  *    > Standardized socialMediaBaubles render
- *
- *    Structure:
- *      - What We're passionate for
- *      - Vision
- *      - Mission
- *      - Organization Activities
- *d      - Stacks that we teact & use "Developer Technologies Cultivated"
- *          >   Website Design
- *          >   AI
- *          >   Overall
  */
 
 //  Typewrite word carousel list

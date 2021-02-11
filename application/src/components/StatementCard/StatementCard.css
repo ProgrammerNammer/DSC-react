@@ -1,0 +1,29 @@
+.statement-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.statement-card__icon {
+  background-color: #4285f4;
+  border: #4285f4 20px solid;
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  align-self: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-basis: auto;
+}
+
+.statement-card__icon ion-icon {
+  font-size: 500%;
+  color: white;
+}
+
+.statement-card h2 {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  align-self: center;
+  margin-top: 20px;
+}
