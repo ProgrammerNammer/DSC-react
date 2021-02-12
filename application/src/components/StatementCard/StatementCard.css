@@ -1,6 +1,5 @@
 .statement-card {
   display: flex;
-  flex-direction: column;
 }
 
 .statement-card__icon {

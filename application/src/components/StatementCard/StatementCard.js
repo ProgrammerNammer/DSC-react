@@ -1,10 +1,20 @@
 import React from "react";
 import "./StatementCard.css";
 
+const renderComponent = ({
+  ionicon,
+  header = "[Input Header]",
+  text = "[Input Text]",
+  sideRendered,
+}) => {
+  return;
+};
+
 const StatementCard = ({
   ionicon,
   header = "[Input Header]",
   text = "[Input Text]",
+  sideRendered,
 }) => {
   return (
     <div className="statement-card">
