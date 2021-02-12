@@ -19,9 +19,9 @@ section {
 
 .section-container h1 {
   font-family: "Open Sans", "Lato", sans-serif;
-  font-size: 250%;
-  font-weight: 600;
-  color: #4f4f4f;
+  font-size: 64px;
+  font-weight: 400;
+  color: black;
 }
 
 .hero {
