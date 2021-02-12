@@ -6,15 +6,17 @@ class SectionAboutUs extends React.Component {
   render() {
     return (
       <section className="section-container section-about-us">
-        <h1 style={{ textAlign: "center" }}>About Us</h1>
-        <p style={{ textAlign: "justify" }}>
-          Developer Student Club Taft is a community of students in De La Salle
-          University – Manila which focuses on building technological solutions
-          for the development of different communities. This Google program aims
-          to help students learn web development, mobile development and other
-          emerging technologies thereby implementing these technologies to solve
-          real-world community problems.
-        </p>
+        <div>
+          <h1 style={{ textAlign: "center" }}>About Us</h1>
+          <p style={{ textAlign: "justify" }}>
+            Developer Student Club Taft is a community of students in De La
+            Salle University – Manila which focuses on building technological
+            solutions for the development of different communities. This Google
+            program aims to help students learn web development, mobile
+            development and other emerging technologies thereby implementing
+            these technologies to solve real-world community problems.
+          </p>
+        </div>
         <div className="section-container__statement-list">
           <div className="statement-list__statement-card">
             <StatementCard

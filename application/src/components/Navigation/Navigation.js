@@ -3,18 +3,18 @@ import NavigationItem from "../NavigationItem/NavigationItem";
 import GDGLogo from "../../assets/images/DSC-logo.png";
 import "./Navigation.css";
 
-//  Instantiate the NavigationItems here
+//  Instantiate the NavigationItem(s) here
 const navigationItems = [
   {
     itemName: "Become A Member",
     itemHoverColor: "#4285f4",
   },
   {
-    itemName: "How It Works",
+    itemName: "Organizational Events",
     itemHoverColor: "#ea4335",
   },
   {
-    itemName: "Organizational Events",
+    itemName: "About Us",
     itemHoverColor: "#fbbc05",
   },
   {

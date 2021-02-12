@@ -1,6 +1,6 @@
 import React from "react";
 import "./StatementCard.css";
-    
+
 const StatementCard = ({
   ionicon,
   header = "[Input Header]",

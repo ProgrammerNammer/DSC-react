@@ -3,12 +3,6 @@ import Bauble from "../Bauble/Bauble";
 import "./Hero.css";
 import "./TypewriterCarousel";
 
-/*  TODO:
- *    > Default word while Word Carousel is loading
- *    > Colored Text. Color palette uses Google colors
- *    > Standardized socialMediaBaubles render
- */
-
 //  Typewrite word carousel list
 const wordList =
   '["Empowering","Inspiring","Motivational","Come Out Of Shell","Socializing"]';
