@@ -23,3 +23,7 @@ yarn-debug.log*
 yarn-error.log*
 
 .eslintcache
+application/node_modules/*
+application/build/*
+application/build/static/*
+application/static/*
