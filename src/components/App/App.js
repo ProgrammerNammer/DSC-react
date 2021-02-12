@@ -7,6 +7,12 @@ import SectionUpcomingEvents from "../SectionUpcomingEvents/SectionUpcomingEvent
 import Footer from "../Footer/Footer";
 import "./App.css";
 
+/*  TODO
+ *    > Default word while Word Carousel is loading
+ *    > Colored Text. Color palette uses Google colors
+ *    > Standardized socialMediaBaubles render
+ */
+
 //  Social Media Links
 const socialMediaBaubles = [
   { referenceLink: "#", ionicon: "logo-twitter", itemHoverColor: "#1da1f2" },
@@ -24,8 +30,8 @@ class App extends React.Component {
           <Navigation />
           <Hero socialMediaBaubles={socialMediaBaubles} />
         </header>
-        <SectionAboutUs />
         <SectionUpcomingEvents />
+        <SectionAboutUs />
         <SectionTechnologyStack />
         <Footer socialMediaBaubles={socialMediaBaubles} />
       </div>

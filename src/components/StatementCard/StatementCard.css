@@ -9,7 +9,6 @@
   border-radius: 50%;
   height: 100px;
   width: 100px;
-  align-self: center;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -24,6 +23,5 @@
 .statement-card h2 {
   text-transform: uppercase;
   letter-spacing: 3px;
-  align-self: center;
   margin-top: 20px;
 }
