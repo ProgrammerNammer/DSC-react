@@ -1,6 +1,6 @@
 import React from "react";
 import OwlCarousel from "react-owl-carousel";
-import EventCard from "../EventCard/EventCard";
+import SpotlightCard from "../SpotlightCard/SpotlightCard";
 import $ from "jquery";
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
@@ -56,7 +56,7 @@ class SectionUpcomingEvents extends React.Component {
   renderEventCards = eventCards.map((item) => {
     return (
       <div className="item">
-        <EventCard
+        <SpotlightCard
           image={item.image}
           alternative={item.alternative}
           headLine={item.headLine}

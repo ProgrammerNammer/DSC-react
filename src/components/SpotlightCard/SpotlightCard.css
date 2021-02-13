@@ -1,0 +1,29 @@
+.spotlight-card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 2%;
+  overflow: hidden;
+  width: 300px;
+  height: 350px;
+  background-color: white;
+}
+
+.spotlight-card__content {
+  padding: 16px 24px;
+}
+
+.spotlight-card__content span {
+  font-family: "Google Sans", "Lato";
+  font-weight: 500;
+  font-size: 18px;
+  color: #202124;
+  word-spacing: 2px;
+}
+
+.spotlight-card__content p {
+  font-family: "Roboto";
+  font-size: 14px;
+  color: #5f6368;
+  line-height: 130%;
+  margin-top: 20px;
+}
