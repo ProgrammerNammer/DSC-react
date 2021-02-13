@@ -18,6 +18,11 @@
   flex: 1 1 50%;
 }
 
+.section-about-us__span {
+  color: #4285f4;
+  margin-right: 20px;
+}
+
 .section-about-us__about p {
   margin: 20px 0;
   font-size: 22px;
@@ -26,16 +31,26 @@
 }
 
 .section-container__statement-list {
-  margin-top: 80px;
+  margin-top: 50px;
   display: flex;
   flex-direction: column;
 }
 
 .statement-list__statement-card {
-  flex: 1 1 100%;
-  margin-right: 20px;
+  margin: 50px 0;
 }
 
-.statement-list__statement-card:last-child {
-  margin-right: 0;
+.section-container__statement-list {
+  position: relative;
+}
+
+.section-container__statement-list::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  border-left: #f2f2f2 2px solid;
+  transform: translate(-50%);
 }

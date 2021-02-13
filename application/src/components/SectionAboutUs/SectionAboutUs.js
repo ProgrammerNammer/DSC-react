@@ -11,7 +11,9 @@ class SectionAboutUs extends React.Component {
       <section className="section-container section-about-us">
         <div className="section-about-us__about">
           <div>
-            <h1>About Us</h1>
+            <h1>
+              <span className="section-about-us__span">&#124;</span>About Us
+            </h1>
             <p style={{ textAlign: "justify" }}>
               Developer Student Club Taft is a community of students in De La
               Salle University – Manila which focuses on building technological
@@ -32,7 +34,7 @@ class SectionAboutUs extends React.Component {
               ionicon="star-outline"
               header="Mission"
               text="Aim to empower students to utilize Google’s technologies in working together to developsolutions to address the concerns of local communities and will be able to enhance the students’ personal and professional network in the field of technology."
-              sideRendered={!isLeft}
+              isLeft={(isLeft = !isLeft)}
             />
           </div>
           <div className="statement-list__statement-card">
@@ -40,7 +42,7 @@ class SectionAboutUs extends React.Component {
               ionicon="eye-outline"
               header="Vision"
               text="We envision Lasallian students to grow as developers for the community."
-              sideRendered={!isLeft}
+              isLeft={(isLeft = !isLeft)}
             />
           </div>
           <div className="statement-list__statement-card">
@@ -48,7 +50,7 @@ class SectionAboutUs extends React.Component {
               ionicon="people"
               header="Goal"
               text="Aims to empower students to be community-driven developers."
-              sideRendered={!isLeft}
+              isLeft={(isLeft = !isLeft)}
             />
           </div>
         </div>
