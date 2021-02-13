@@ -16,7 +16,7 @@ const StatementCard = ({
     return (
       <div className="statement-card">
         <div className="statement-card__left-part">
-          <div className="statement-card__icon statement-card__icon--left-side">
+          <div className="statement-card__icon statement-card__icon--left">
             <ion-icon name={ionicon} />
           </div>
         </div>
@@ -38,7 +38,7 @@ const StatementCard = ({
           </div>
         </div>
         <div className="statement-card__left-part">
-          <div className="statement-card__icon">
+          <div className="statement-card__icon statement-card__icon--right">
             <ion-icon name={ionicon} />
           </div>
         </div>
