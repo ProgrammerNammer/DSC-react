@@ -31,7 +31,7 @@ class SectionAboutUs extends React.Component {
         <div className="section-container__statement-list">
           <div className="statement-list__statement-card">
             <StatementCard
-              ionicon="star-outline"
+              ionicon="star"
               header="Mission"
               text="Aim to empower students to utilize Google’s technologies in working together to developsolutions to address the concerns of local communities and will be able to enhance the students’ personal and professional network in the field of technology."
               isLeft={(isLeft = !isLeft)}
@@ -39,7 +39,7 @@ class SectionAboutUs extends React.Component {
           </div>
           <div className="statement-list__statement-card">
             <StatementCard
-              ionicon="eye-outline"
+              ionicon="airplane"
               header="Vision"
               text="We envision Lasallian students to grow as developers for the community."
               isLeft={(isLeft = !isLeft)}
@@ -47,7 +47,7 @@ class SectionAboutUs extends React.Component {
           </div>
           <div className="statement-list__statement-card">
             <StatementCard
-              ionicon="people"
+              ionicon="medal"
               header="Goal"
               text="Aims to empower students to be community-driven developers."
               isLeft={(isLeft = !isLeft)}
