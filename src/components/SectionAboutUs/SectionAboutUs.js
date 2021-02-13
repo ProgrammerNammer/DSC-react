@@ -8,7 +8,10 @@ class SectionAboutUs extends React.Component {
     let isLeft = false;
 
     return (
-      <section className="section-container section-about-us">
+      <section
+        className="section-container section-about-us"
+        id={this.props.id}
+      >
         <div className="section-about-us__about">
           <div>
             <h1>

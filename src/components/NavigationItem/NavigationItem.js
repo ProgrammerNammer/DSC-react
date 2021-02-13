@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-scroll";
 import "./NavigationItem.css";
 
 class NavigationItem extends React.Component {
@@ -32,7 +33,7 @@ class NavigationItem extends React.Component {
       };
     } else if (!this.state.hoveredOn && this.state.stickyNavigationState) {
       style = {
-        color: this.props.itemHoverColor,
+        color: "black",
       };
     } else if (this.state.hoveredOn && !this.state.stickyNavigationState) {
       style = {
@@ -52,16 +53,22 @@ class NavigationItem extends React.Component {
   };
 
   render() {
+    console.log("navigate to " + this.props.navigateToID);
     return (
-      <a
-        href={this.props.source}
+      <Link
+        className={`navigation-item`}
         style={this.getStyle()}
         onMouseEnter={this.toggleHover}
         onMouseLeave={this.toggleHover}
-        className="navigation-item"
+        activeClass="active"
+        to={this.props.navigateToID}
+        spy={true}
+        smooth={true}
+        offset={-70}
+        duration={800}
       >
         {this.props.itemName}
-      </a>
+      </Link>
     );
   }
 }
@@ -69,7 +76,7 @@ class NavigationItem extends React.Component {
 NavigationItem.defaultProps = {
   itemHoverColor: "Blue",
   itemName: "Input Item Name",
-  source: "#",
+  navigateToID: "hero",
 };
 
 export default NavigationItem;

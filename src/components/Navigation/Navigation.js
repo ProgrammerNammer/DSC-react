@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-scroll";
 import NavigationItem from "../NavigationItem/NavigationItem";
 import GDGLogo from "../../assets/images/DSC-logo.png";
 import "./Navigation.css";
@@ -10,11 +11,12 @@ const navigationItems = [
     itemHoverColor: "#4285f4",
   },
   {
-    itemName: "Organizational Events",
+    itemName: "About Us",
     itemHoverColor: "#ea4335",
+    navigateToID: "sectionAboutUs",
   },
   {
-    itemName: "About Us",
+    itemName: "Organizational Events",
     itemHoverColor: "#fbbc05",
   },
   {
@@ -62,6 +64,7 @@ class Navigation extends React.Component {
           <NavigationItem
             itemName={item.itemName}
             itemHoverColor={item.itemHoverColor}
+            navigateToID={item.navigateToID}
             stickyNavigationState={this.state.stickyNavigation}
           />
         </div>
@@ -70,10 +73,19 @@ class Navigation extends React.Component {
 
     return (
       <nav className={this.renderNavigationState()}>
-        <div className="navigation-logo">
+        <Link
+          className={`navigation-logo`}
+          activeClass="active"
+          to="hero"
+          spy={true}
+          smooth={true}
+          offset={-70}
+          duration={800}
+        >
           <span>DLSU DSC</span>
           <img src={GDGLogo} alt="DSC-Logo" />
-        </div>
+        </Link>
+
         <div className="navigation-list">{renderNavigationItems}</div>
       </nav>
     );

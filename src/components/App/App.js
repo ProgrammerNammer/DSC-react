@@ -26,12 +26,12 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        <header className="hero">
+        <header className="hero" id="hero">
           <Navigation />
           <Hero socialMediaBaubles={socialMediaBaubles} />
         </header>
         <SectionUpcomingEvents />
-        <SectionAboutUs />
+        <SectionAboutUs id="sectionAboutUs" />
         <SectionTechnologyStack />
         <Footer socialMediaBaubles={socialMediaBaubles} />
       </div>

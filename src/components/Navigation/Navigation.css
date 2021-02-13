@@ -19,7 +19,7 @@ nav {
 
 .navigation--sticky {
   background-color: rgba(255, 255, 255, 0.97);
-  padding: 10px 0;
+  padding: 0;
   box-shadow: 0 2px 10px #afafaf;
 }
 
@@ -29,6 +29,7 @@ nav {
 
 .navigation-logo {
   display: flex;
+  cursor: pointer;
   justify-content: center;
   align-items: center;
   margin-left: 5%;
