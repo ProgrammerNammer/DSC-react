@@ -48,7 +48,7 @@ class SectionAboutUs extends React.Component {
       <section className="sectionContainer" id={this.props.id}>
         <div className={styles.sectionAboutUs}>
           <div>
-            <h1>
+            <h1 className="header__heavy">
               <span>&#124;</span>About Us
             </h1>
             <p>

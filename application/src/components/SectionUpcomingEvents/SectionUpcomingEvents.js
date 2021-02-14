@@ -4,6 +4,7 @@ import SpotlightCard from "../SpotlightCard/SpotlightCard";
 import $ from "jquery";
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
+import styles from "./SectionUpcomingEvents.module.css";
 import "./SectionUpcomingEvents.css";
 
 /**
@@ -68,10 +69,10 @@ class SectionUpcomingEvents extends React.Component {
 
   render() {
     return (
-      <section className="section-upcoming-events">
+      <section className={styles.SectionUpcomingEvents}>
         <h1 className="header__light">ORGANIZATION SPOTLIGHT</h1>
-        <div className="section-upcoming-events__background">
-          <div className="section-upcoming-events__carousel">
+        <div className={styles.sectionUpcomingEvents_carousel}>
+          <div>
             <OwlCarousel
               stagePadding={50}
               items={Math.floor($(window).width() / 300)}
