@@ -50,7 +50,7 @@ class SectionAboutUs extends React.Component {
           <div>
             <h1 className="header__light">About Us</h1>
             <h1 className="header__heavy">
-              <span>&#124;</span>Who We Are
+              <span className="bookmark__red">&#124;</span>Who We Are
             </h1>
             <p>
               Developer Student Club Taft is a community of students in De La
