@@ -54,7 +54,7 @@ class Navigation extends React.Component {
 
   renderNavigationState = () => {
     if (this.state.stickyNavigation) {
-      return styles.navigationSticky;
+      return styles.navigation__sticky;
     }
   };
 
