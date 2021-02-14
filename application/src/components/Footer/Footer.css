@@ -10,23 +10,3 @@ footer {
 footer div p {
   color: #8f8f8f;
 }
-
-.footer-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.footer-container__baubles-list {
-  font-size: 150%;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  position: absolute;
-  right: 3%;
-  top: 15%;
-}
-
-.baubles-list__bauble-item {
-  margin-right: 10px;
-}

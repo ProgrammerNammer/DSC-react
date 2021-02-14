@@ -1,11 +1,12 @@
 import React from "react";
 import Bauble from "../Bauble/Bauble";
+import styles from "./Footer.module.css";
 import "./Footer.css";
 
 const Footer = (props) => {
   const renderBaubles = props.socialMediaBaubles.map((item) => {
     return (
-      <div className="baubles-list__bauble-item">
+      <div className={styles.baublesItem}>
         <Bauble
           referenceLink={item.referenceLink}
           ionicon={item.ionicon}
@@ -17,8 +18,10 @@ const Footer = (props) => {
 
   return (
     <footer>
-      <div className="footer-container">
-        <div className="footer-container__baubles-list">{renderBaubles}</div>
+      <div className={styles.footerContainer}>
+        <div className={styles.footerContainer__baublesList}>
+          {renderBaubles}
+        </div>
         <p>Copyright &copy; 2021 by DLSU GDG. All rights reserved.</p>
       </div>
     </footer>
