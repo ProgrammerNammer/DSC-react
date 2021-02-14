@@ -1,4 +1,5 @@
 import React from "react";
+import styles from "./Bauble.module.css";
 import "./Bauble.css";
 
 class Bauble extends React.Component {
@@ -33,7 +34,7 @@ class Bauble extends React.Component {
   render() {
     return (
       <div
-        className={this.props.withBauble ? "baubles-bubble" : ""}
+        className={this.props.withBauble ? styles.baubles__bubble : ""}
         onMouseEnter={this.toggleHover}
         onMouseLeave={this.toggleHover}
       >
