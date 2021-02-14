@@ -24,9 +24,20 @@ p {
   line-height: 180%;
 }
 
+a {
+  text-decoration: none;
+}
+
 .header__heavy {
   font-family: "Open Sans", "Lato", sans-serif;
   font-size: 64px;
+  font-weight: 400;
+  color: black;
+}
+
+.header__medium {
+  font-family: "Open Sans", "Lato", sans-serif;
+  font-size: 36px;
   font-weight: 400;
   color: black;
 }
@@ -41,4 +52,38 @@ p {
 
 .sectionContainer {
   margin: 0 8%;
+  height: 100vh;
+}
+
+.button__blue {
+  border-radius: 5px;
+  background-color: #1a73e8;
+  padding: 10px 24px;
+  color: white;
+  font-family: "Open Sans";
+  font-size: 14px;
+}
+
+.button__blue:hover {
+  background-color: #3c8af0;
+}
+
+.bookmark__blue {
+  color: #4285f4;
+  margin-right: 20px;
+}
+
+.bookmark__red {
+  color: #ea4335;
+  margin-right: 20px;
+}
+
+.bookmark__yellow {
+  color: #fbbc05;
+  margin-right: 20px;
+}
+
+.bookmark__green {
+  color: #34a853;
+  margin-right: 20px;
 }
