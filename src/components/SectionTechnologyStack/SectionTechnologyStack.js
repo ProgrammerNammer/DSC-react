@@ -9,8 +9,8 @@ import React from "react";
 class SectionAboutUs extends React.Component {
   render() {
     return (
-      <section>
-        <h1> Developer Technologies Fostered </h1>
+      <section className="sectionContainer">
+        <h1 className="header__medium"> Developer Technologies Fostered </h1>
       </section>
     );
   }
