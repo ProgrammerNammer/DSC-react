@@ -69,7 +69,7 @@ class SectionUpcomingEvents extends React.Component {
   render() {
     return (
       <section className="section-upcoming-events">
-        <h1>ORGANIZATION SPOTLIGHT</h1>
+        <h1 className="header__light">ORGANIZATION SPOTLIGHT</h1>
         <div className="section-upcoming-events__background">
           <div className="section-upcoming-events__carousel">
             <OwlCarousel

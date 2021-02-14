@@ -5,6 +5,7 @@ import SectionAboutUs from "../SectionAboutUs/SectionAboutUs";
 import SectionTechnologyStack from "../SectionTechnologyStack/SectionTechnologyStack";
 import SectionUpcomingEvents from "../SectionUpcomingEvents/SectionUpcomingEvents";
 import Footer from "../Footer/Footer";
+import styles from "./App.module.css";
 import "./App.css";
 
 /*  TODO
@@ -26,7 +27,7 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        <header className="hero" id="hero">
+        <header className={styles.hero} id="hero">
           <Navigation />
           <Hero socialMediaBaubles={socialMediaBaubles} />
         </header>

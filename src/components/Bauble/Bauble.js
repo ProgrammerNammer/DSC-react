@@ -42,7 +42,7 @@ class Bauble extends React.Component {
           href={this.props.referenceLink}
           target="_blank"
           rel="noopener noreferrer"
-          className="baubles"
+          className={styles.bauble}
           style={this.getStyle()}
         >
           <ion-icon name={this.props.ionicon} />
