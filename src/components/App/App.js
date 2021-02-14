@@ -31,7 +31,7 @@ class App extends React.Component {
           <Navigation />
           <Hero socialMediaBaubles={socialMediaBaubles} />
         </header>
-        <SectionUpcomingEvents />
+        <SectionUpcomingEvents id="sectionUpcomingEvents" />
         <SectionAboutUs id="sectionAboutUs" />
         <SectionTechnologyStack />
         <Footer socialMediaBaubles={socialMediaBaubles} />

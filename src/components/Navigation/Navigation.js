@@ -12,13 +12,14 @@ const navigationItems = [
     itemHoverColor: "#4285f4",
   },
   {
-    itemName: "About Us",
+    itemName: "Organizational Events",
     itemHoverColor: "#ea4335",
-    navigateToID: "sectionAboutUs",
+    navigateToID: "sectionUpcomingEvents",
   },
   {
-    itemName: "Organizational Events",
+    itemName: "About Us",
     itemHoverColor: "#fbbc05",
+    navigateToID: "sectionAboutUs",
   },
   {
     itemName: "Our Social Hubs",

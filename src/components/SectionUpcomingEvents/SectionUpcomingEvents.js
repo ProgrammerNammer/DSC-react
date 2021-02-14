@@ -69,8 +69,12 @@ class SectionUpcomingEvents extends React.Component {
 
   render() {
     return (
-      <section className={styles.SectionUpcomingEvents}>
-        <h1 className="header__light">ORGANIZATION SPOTLIGHT</h1>
+      <section className={styles.sectionUpcomingEvents} id={this.props.id}>
+        <h1
+          className={`header__light ${styles.sectionUpcomingEvents_headerLine}`}
+        >
+          ORGANIZATION SPOTLIGHT
+        </h1>
         <div className={styles.sectionUpcomingEvents_carousel}>
           <div>
             <OwlCarousel

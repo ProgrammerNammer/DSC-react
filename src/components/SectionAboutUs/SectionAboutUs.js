@@ -48,8 +48,9 @@ class SectionAboutUs extends React.Component {
       <section className="sectionContainer" id={this.props.id}>
         <div className={styles.sectionAboutUs}>
           <div>
+            <h1 className="header__light">About Us</h1>
             <h1 className="header__heavy">
-              <span>&#124;</span>About Us
+              <span>&#124;</span>Who We Are
             </h1>
             <p>
               Developer Student Club Taft is a community of students in De La
