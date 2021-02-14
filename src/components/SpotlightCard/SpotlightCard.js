@@ -1,4 +1,5 @@
 import React from "react";
+import styles from "./SpotlightCard.module.css";
 import "./SpotlightCard.css";
 
 /**
@@ -8,19 +9,19 @@ import "./SpotlightCard.css";
  *      >   Background image just for logo
  *  >   Whole Component is an anchor element
  *  >   'See more' anchor element
- *  >   Load all eventCards to load from a local JSON file
+ *  >   Load all spotlightCards to load from a local JSON file
  */
 
 class SpotlightCard extends React.Component {
   render() {
     return (
-      <div className="event-card">
-        <div className="event-card__hero">
+      <div className={styles.spotlight}>
+        <div>
           <img src={this.props.image} alt={this.props.alternative} />
         </div>
-        <div className="event-card__content">
-          <span>{this.props.headLine}</span>
-          <p>{this.props.text}</p>
+        <div className={styles.content}>
+          <span className={styles.headLine}>{this.props.headLine}</span>
+          <p className={styles.text}>{this.props.text}</p>
         </div>
       </div>
     );
