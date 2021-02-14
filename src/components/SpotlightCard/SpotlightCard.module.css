@@ -8,11 +8,11 @@
   background-color: white;
 }
 
-.content {
+.spotlight__content {
   padding: 16px 24px;
 }
 
-.headLine {
+.spotlight__content span {
   font-family: "Google Sans", "Lato";
   font-weight: 500;
   font-size: 18px;
@@ -20,7 +20,7 @@
   word-spacing: 2px;
 }
 
-.text {
+.spotlight__content p {
   font-family: "Roboto";
   font-size: 14px;
   color: #5f6368;
