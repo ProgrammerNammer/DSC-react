@@ -20,13 +20,13 @@ section {
   padding: 60px 0;
 }
 
-.section-container {
-  margin: 0 8%;
-}
-
 h1 {
   font-family: "Open Sans", "Lato", sans-serif;
   font-size: 64px;
   font-weight: 400;
   color: black;
+}
+
+p {
+  line-height: 180%;
 }
