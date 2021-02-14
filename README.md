@@ -24,9 +24,9 @@ The website can be visited [through this link](https://programmernammer.github.i
   * Members
   * Member Annotations
   * Projects done & Events hosted
-* Smooth Waypoints / Page Navigation
 * Special Icons
 * Website Responsiveness
+* Dynamic Image-related Components, content still applicable w/o image provided
 
 ## Bugs
 If a bug is encountered, please do not hesitate to [open a new issue here](https://github.com/ProgrammerNammer/DSC-react/issues/new). Include what the circumstances were and any other information needed in replicating your issue. Remember, a well-documented Bug Report is as good as a solved one! 
