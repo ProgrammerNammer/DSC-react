@@ -1,4 +1,5 @@
 import React from "react";
+import styles from "./NavigationItem.module.css";
 import { Link } from "react-scroll";
 import "./NavigationItem.css";
 
@@ -56,7 +57,7 @@ class NavigationItem extends React.Component {
     console.log("navigate to " + this.props.navigateToID);
     return (
       <Link
-        className={`navigation-item`}
+        className={styles.navigationItem}
         style={this.getStyle()}
         onMouseEnter={this.toggleHover}
         onMouseLeave={this.toggleHover}
