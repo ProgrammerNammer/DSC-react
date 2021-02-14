@@ -1,23 +1,57 @@
 import React from "react";
 import StatementCard from "../StatementCard/StatementCard";
 import AboutUs from "../../assets/images/event-1.jpg";
+import styles from "./SectionAboutUs.module.css";
 import "./SectionAboutUs.css";
 
-class SectionAboutUs extends React.Component {
-  render() {
-    let isLeft = false;
+var isLeft = false;
 
+const statementCards = [
+  {
+    ionicon: "star",
+    header: "Mission",
+    text:
+      "Aim to empower students to utilize Google’s technologies in working together to developsolutions to address the concerns of local communities and will be able to enhance the students’ personal and professional network in the field of technology.",
+    isLeft: (isLeft = !isLeft),
+  },
+  {
+    ionicon: "airplane",
+    header: "Vision",
+    text:
+      "We envision Lasallian students to grow as developers for the community.",
+    isLeft: (isLeft = !isLeft),
+  },
+  {
+    ionicon: "medal",
+    header: "Goal",
+    text: "Aims to empower students to be community-driven developers.",
+    isLeft: (isLeft = !isLeft),
+  },
+];
+
+class SectionAboutUs extends React.Component {
+  renderStatementCards = statementCards.map((item) => {
     return (
-      <section
-        className="section-container section-about-us"
-        id={this.props.id}
-      >
-        <div className="section-about-us__about">
+      <div className={styles.statementCard}>
+        <StatementCard
+          ionicon={item.ionicon}
+          header={item.header}
+          text={item.text}
+          isLeft={(isLeft = !isLeft)}
+        />
+      </div>
+    );
+  });
+
+  render() {
+    return (
+      <section className="sectionContainer" id={this.props.id}>
+        <div className={styles.sectionAboutUs}>
           <div>
             <h1>
-              <span className="section-about-us__span">&#124;</span>About Us
+              <span>&#124;</span>About Us
             </h1>
-            <p style={{ textAlign: "justify" }}>
+            <p>
               Developer Student Club Taft is a community of students in De La
               Salle University – Manila which focuses on building technological
               solutions for the development of different communities. This
@@ -26,36 +60,13 @@ class SectionAboutUs extends React.Component {
               these technologies to solve real-world community problems.
             </p>
           </div>
-          <div className="column" />
-          <div className="section-about-us__img">
+          <div className={styles.sectionAboutUs_column} />
+          <div className={styles.sectionAboutUs_image}>
             <img src={AboutUs} alt="DLSU DSC" />
           </div>
         </div>
-        <div className="section-container__statement-list">
-          <div className="statement-list__statement-card">
-            <StatementCard
-              ionicon="star"
-              header="Mission"
-              text="Aim to empower students to utilize Google’s technologies in working together to developsolutions to address the concerns of local communities and will be able to enhance the students’ personal and professional network in the field of technology."
-              isLeft={(isLeft = !isLeft)}
-            />
-          </div>
-          <div className="statement-list__statement-card">
-            <StatementCard
-              ionicon="airplane"
-              header="Vision"
-              text="We envision Lasallian students to grow as developers for the community."
-              isLeft={(isLeft = !isLeft)}
-            />
-          </div>
-          <div className="statement-list__statement-card">
-            <StatementCard
-              ionicon="medal"
-              header="Goal"
-              text="Aims to empower students to be community-driven developers."
-              isLeft={(isLeft = !isLeft)}
-            />
-          </div>
+        <div className={styles.sectionAboutUsStatements}>
+          {this.renderStatementCards}
         </div>
       </section>
     );

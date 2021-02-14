@@ -54,7 +54,6 @@ class NavigationItem extends React.Component {
   };
 
   render() {
-    console.log("navigate to " + this.props.navigateToID);
     return (
       <Link
         className={styles.navigationItem}

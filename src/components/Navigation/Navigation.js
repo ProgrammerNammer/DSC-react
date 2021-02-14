@@ -27,7 +27,6 @@ const navigationItems = [
 ];
 
 class Navigation extends React.Component {
-  listener = null;
   state = {
     stickyNavigation: false,
   };
