@@ -1,11 +1,12 @@
 import React from "react";
 import Bauble from "../Bauble/Bauble";
+import styles from "./Hero.module.css";
 import "./Hero.css";
 import "./TypewriterCarousel";
 
 //  Typewrite word carousel list
 const wordList =
-  '["Empowering","Inspiring","Motivational","Come Out Of Shell","Socializing"]';
+  '["Empowerment","Inspiration","Motivational","Come Out Of Shell","Socializing"]';
 
 class Hero extends React.Component {
   /*  Note:
@@ -16,7 +17,7 @@ class Hero extends React.Component {
 
   renderBaubles = this.props.socialMediaBaubles.map((item) => {
     return (
-      <div className="hero-container__bauble-item">
+      <div className={styles.baublesItem}>
         <Bauble
           referenceLink={item.referenceLink}
           ionicon={item.ionicon}
@@ -29,29 +30,28 @@ class Hero extends React.Component {
   render() {
     return (
       <header>
-        <div className="hero-container">
+        <div className={styles.hero}>
           <div>
-            <span className="hero-container__text--normal">
+            <h1 className={styles.header__hero}>
               DLSU Developer Hub
               <br />
               Your
-            </span>
+            </h1>
             <span
-              href=""
-              className="typewrite hero-container__text--typewrite"
+              className={`${styles.header__hero} typewrite`}
               data-period="2000"
               data-type={wordList}
             >
-              <span className="wrap"></span>
+              <span className="wrap" />
             </span>
-            <span className="hero-container__text--normal">Environment</span>
+            <h1 className={styles.header__hero}>Environment</h1>
           </div>
-          <span className="hero-container__member-count">{`${this.state.memberCount} Organization Members`}</span>
-          <div className="hero-container__baubles-list">
-            {this.renderBaubles}
-          </div>
+          <span
+            className={styles.hero_memberCount}
+          >{`${this.state.memberCount} Organization Members`}</span>
+          <div className={styles.hero_baublesList}>{this.renderBaubles}</div>
         </div>
-        <div className="attributes">
+        <div className={styles.attributes}>
           Background image by Ramiltibayan.
           <br />
           <a
