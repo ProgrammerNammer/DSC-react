@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-scroll";
+import styles from "./NavigationItem.module.css";
 import "./NavigationItem.css";
 
 class NavigationItem extends React.Component {
@@ -49,6 +50,7 @@ class NavigationItem extends React.Component {
     if (this.state.stickyNavigationState) {
       style.fontWeight = 400;
     }
+
     return style;
   };
 
@@ -56,7 +58,7 @@ class NavigationItem extends React.Component {
     console.log("navigate to " + this.props.navigateToID);
     return (
       <Link
-        className={`navigation-item`}
+        className={styles.navigationItem}
         style={this.getStyle()}
         onMouseEnter={this.toggleHover}
         onMouseLeave={this.toggleHover}
