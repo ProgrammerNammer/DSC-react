@@ -11,20 +11,21 @@ const statementCards = [
     ionicon: "star",
     header: "Mission",
     text:
-      "Aim to empower students to utilize Google’s technologies in working together to developsolutions to address the concerns of local communities and will be able to enhance the students’ personal and professional network in the field of technology.",
+      "Aim to empower students to utilize Google’s technologies in working together to developsolutions to address the concerns of local communities and will be able to enhance the students’ personal and professional network in the field of technology. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
     isLeft: (isLeft = !isLeft),
   },
   {
     ionicon: "airplane",
     header: "Vision",
     text:
-      "We envision Lasallian students to grow as developers for the community.",
+      "We envision Lasallian students to grow as developers for the community. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
     isLeft: (isLeft = !isLeft),
   },
   {
     ionicon: "medal",
     header: "Goal",
-    text: "Aims to empower students to be community-driven developers.",
+    text:
+      "Aims to empower students to be community-driven developers. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
     isLeft: (isLeft = !isLeft),
   },
 ];

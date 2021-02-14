@@ -4,52 +4,39 @@ import { Link } from "react-scroll";
 import "./NavigationItem.css";
 
 class NavigationItem extends React.Component {
-  state = { hoveredOn: false, stickyNavigationState: false };
+  state = { hoveredOn: false };
 
   toggleHover = () => {
     this.setState({ hoveredOn: !this.state.hoveredOn });
   };
 
-  componentDidUpdate(prevProps) {
-    if (prevProps.stickyNavigationState !== this.props.stickyNavigationState) {
-      if (!this.state.stickyNavigationState) {
-        this.setState({
-          stickyNavigationState: true,
-        });
-      } else {
-        this.setState({
-          stickyNavigationState: false,
-        });
-      }
-    }
-  }
-
   getStyle = () => {
     var style;
 
-    if (this.state.hoveredOn && this.state.stickyNavigationState) {
+    if (this.state.hoveredOn && this.props.stickyNavigation) {
       style = {
         color: "white",
         backgroundColor: this.props.itemHoverColor,
       };
-    } else if (!this.state.hoveredOn && this.state.stickyNavigationState) {
+    } else if (!this.state.hoveredOn && this.props.stickyNavigation) {
       style = {
         color: "black",
       };
-    } else if (this.state.hoveredOn && !this.state.stickyNavigationState) {
+    } else if (this.state.hoveredOn && !this.props.stickyNavigation) {
       style = {
         color: "white",
         backgroundColor: this.props.itemHoverColor,
       };
-    } else if (!this.state.hoveredOn && !this.state.stickyNavigationState) {
+    } else if (!this.state.hoveredOn && !this.props.stickyNavigation) {
       style = {
         color: "white",
       };
     }
 
-    if (this.state.stickyNavigationState) {
+    if (this.state.stickyNavigation) {
       style.fontWeight = 400;
     }
+
     return style;
   };
 
