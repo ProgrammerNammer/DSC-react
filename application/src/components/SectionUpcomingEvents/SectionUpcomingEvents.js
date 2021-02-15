@@ -69,14 +69,13 @@ const eventCard = [
 class SectionUpcomingEvents extends React.Component {
   renderSpotlightCards = spotlightCards.map((item) => {
     return (
-      <div className="item">
-        <SpotlightCard
-          image={item.image}
-          alternative={item.alternative}
-          headLine={item.headLine}
-          text={item.text}
-        />
-      </div>
+      <SpotlightCard
+        image={item.image}
+        alternative={item.alternative}
+        headLine={item.headLine}
+        text={item.text}
+        className={`item`}
+      />
     );
   });
 

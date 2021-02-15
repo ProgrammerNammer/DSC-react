@@ -34,7 +34,7 @@ class Bauble extends React.Component {
   render() {
     return (
       <div
-        className={this.props.withBauble ? styles.baubles__bubble : ""}
+        className={this.props.withBauble && styles.baubles__bubble}
         onMouseEnter={this.toggleHover}
         onMouseLeave={this.toggleHover}
       >
