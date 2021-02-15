@@ -2,21 +2,22 @@
   cursor: pointer;
   padding: 20px;
   display: flex;
+  border-bottom: 1px #dbdbdb solid;
 }
 
-.technologyCard__active {
-  background-color: black;
-  color: white;
+.technologyCard:last-child {
+  border-bottom: none;
 }
 
 .technologyCard_ionicon {
-  font-size: 50px;
+  font-size: 35px;
   display: flex;
+  align-items: center;
   justify-content: center;
 }
 
 .technologyCard_column {
-  flex: 1 1 5%;
+  flex: 1 1 10%;
 }
 
 .technologyCard_content h2 {
@@ -26,5 +27,4 @@
 
 .technologyCard_content p {
   line-height: 150%;
-  color: #8b8b8b;
 }

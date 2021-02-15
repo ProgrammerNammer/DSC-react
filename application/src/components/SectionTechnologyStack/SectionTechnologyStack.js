@@ -9,20 +9,38 @@ import styles from "./SectionTechnologyStack.module.css";
 
 const technologyCards = [
   {
-    ionicon: "bulb-outline",
+    ionicon: "build-outline",
     headerLine: "Developer Tools",
+    hoverColor: "#4285f4",
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
   },
   {
-    ionicon: "bulb-outline",
-    headerLine: "Developer Tools",
+    ionicon: "cog-outline",
+    headerLine: "Artificial Intelligence",
+    hoverColor: "#ea4335",
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+  },
+  {
+    ionicon: "globe-outline",
+    headerLine: "Website Development",
+    hoverColor: "#fbbc05",
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+  },
+  {
+    ionicon: "phone-portrait-outline",
+    headerLine: "Mobile Development",
+    hoverColor: "#34a853",
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
   },
 ];
 
 class SectionAboutUs extends React.Component {
+  state = { selectedCard: 1 };
+
   render() {
     return (
       <section className="sectionContainer">
@@ -31,9 +49,16 @@ class SectionAboutUs extends React.Component {
         </h1>
         <div className={styles.content}>
           <div className={styles.content_technologyList}>
-            <TechnologyList technologyCards={technologyCards} />
+            <TechnologyList
+              technologyCards={technologyCards}
+              itemSelected={this.state.selectedCard}
+            />
           </div>
-          <div></div>
+          <div className={styles.content_article}>
+            <h1 className="header--medium">
+              a{/* {technologyCards[this.state.itemSelected - 1].headerLine} */}
+            </h1>
+          </div>
         </div>
       </section>
     );
