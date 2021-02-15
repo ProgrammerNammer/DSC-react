@@ -3,14 +3,6 @@ import styles from "./TechnologyList.module.css";
 import TechnologyCard from "../TechnologyCard/TechnologyCard";
 
 class TechnologyList extends React.Component {
-  state = { selectedCard: 1 };
-
-  onToggle = (cardNumber) => {
-    if (cardNumber !== this.state.selectedCard) {
-      this.setState({ selectedCard: cardNumber });
-    }
-  };
-
   renderTechnologyCards = () => {
     let counter = 1;
 
@@ -22,8 +14,8 @@ class TechnologyList extends React.Component {
           description={item.description}
           hoverColor={item.hoverColor}
           cardNumber={counter++}
-          onToggle={this.onToggle}
-          itemSelected={this.state.selectedCard}
+          onToggle={this.props.onToggle}
+          itemSelected={this.props.itemSelected}
         />
       );
     });

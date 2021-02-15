@@ -41,6 +41,12 @@ const technologyCards = [
 class SectionAboutUs extends React.Component {
   state = { selectedCard: 1 };
 
+  onToggle = (cardNumber) => {
+    if (cardNumber !== this.state.selectedCard) {
+      this.setState({ selectedCard: cardNumber });
+    }
+  };
+
   render() {
     return (
       <section className="sectionContainer">
@@ -52,12 +58,14 @@ class SectionAboutUs extends React.Component {
             <TechnologyList
               technologyCards={technologyCards}
               itemSelected={this.state.selectedCard}
+              onToggle={this.onToggle}
             />
           </div>
           <div className={styles.content_article}>
             <h1 className="header--medium">
-              a{/* {technologyCards[this.state.itemSelected - 1].headerLine} */}
+              {technologyCards[this.state.selectedCard - 1].headerLine}
             </h1>
+            <p>{technologyCards[this.state.selectedCard - 1].description}</p>
           </div>
         </div>
       </section>
