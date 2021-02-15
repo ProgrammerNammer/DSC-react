@@ -11,8 +11,9 @@ class TechnologyList extends React.Component {
         <TechnologyCard
           ionicon={item.ionicon}
           headerLine={item.headerLine}
-          description={item.description}
+          subHeaderLine={item.subHeaderLine}
           hoverColor={item.hoverColor}
+          lighterHoverColor={item.lighterHoverColor}
           cardNumber={counter++}
           onToggle={this.props.onToggle}
           itemSelected={this.props.itemSelected}

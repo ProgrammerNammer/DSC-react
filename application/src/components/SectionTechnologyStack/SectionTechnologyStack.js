@@ -12,28 +12,32 @@ const technologyCards = [
     ionicon: "build-outline",
     headerLine: "Developer Tools",
     hoverColor: "#4285f4",
-    description:
+    lighterHoverColor: "#e5e5e5",
+    subHeaderLine:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
   },
   {
     ionicon: "cog-outline",
     headerLine: "Artificial Intelligence",
     hoverColor: "#ea4335",
-    description:
+    lighterHoverColor: "#e5e5e5",
+    subHeaderLine:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
   },
   {
     ionicon: "globe-outline",
     headerLine: "Website Development",
     hoverColor: "#fbbc05",
-    description:
+    lighterHoverColor: "#e5e5e5",
+    subHeaderLine:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
   },
   {
     ionicon: "phone-portrait-outline",
     headerLine: "Mobile Development",
     hoverColor: "#34a853",
-    description:
+    lighterHoverColor: "#e5e5e5",
+    subHeaderLine:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
   },
 ];

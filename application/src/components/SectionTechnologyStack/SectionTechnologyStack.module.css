@@ -15,3 +15,11 @@
   margin-top: 20px;
   margin-left: 40px;
 }
+
+.content_article h1 {
+  margin-bottom: 30px;
+}
+
+.content_article p {
+  font-size: 18px;
+}
