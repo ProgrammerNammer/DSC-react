@@ -4,6 +4,7 @@ import "./EventCard.css";
 
 class EventCard extends React.Component {
   render() {
+    console.log(this.props.link);
     return (
       <div className={styles.eventCard}>
         <div className={styles.eventCard_image}>
@@ -14,13 +15,13 @@ class EventCard extends React.Component {
           <h3>{this.props.date}</h3>
           <h2>{this.props.headline}</h2>
           <p>{this.props.text}</p>
-          <a
+          {/* <a
             className="button__blue"
-            href="#"
+            href=""
             onClick={(event) => event.preventDefault()}
           >
             View Details
-          </a>
+          </a> */}
         </div>
       </div>
     );

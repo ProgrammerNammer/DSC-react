@@ -1,0 +1,51 @@
+.MemberAnnotationCard {
+  position: relative;
+}
+
+.MemberAnnotationCard_quote {
+  line-height: 200%;
+  font-size: 18px;
+  font-style: italic;
+  font-weight: 300;
+  padding-top: 20px;
+}
+
+.MemberAnnotationCard_quote::before {
+  content: "\201C ";
+  font-size: 400%;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.MemberAnnotationCard_profile {
+  display: flex;
+  color: white;
+  margin-top: 40px;
+}
+
+.profile_portrait {
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.profile_portrait img {
+  height: 50px;
+  width: 50px;
+  object-fit: cover;
+  background-position: center center;
+}
+
+.profile_information {
+  margin-left: 20px;
+}
+
+.information_name {
+  font-size: 20px;
+  font-style: normal;
+}
+
+.information_position {
+  font-weight: 300;
+}

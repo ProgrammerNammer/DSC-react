@@ -10,6 +10,7 @@ const navigationItems = [
   {
     itemName: "Become A Member",
     itemHoverColor: "#4285f4",
+    navigateToID: "BecomeAMember",
   },
   {
     itemName: "Organizational Events",
@@ -22,8 +23,9 @@ const navigationItems = [
     navigateToID: "sectionAboutUs",
   },
   {
-    itemName: "Our Social Hubs",
+    itemName: "Our Members",
     itemHoverColor: "#34a853",
+    navigateToID: "OurMembers",
   },
 ];
 

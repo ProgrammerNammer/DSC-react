@@ -4,45 +4,42 @@ import AboutUs from "../../assets/images/event-1.jpg";
 import styles from "./SectionAboutUs.module.css";
 import "./SectionAboutUs.css";
 
-var isLeft = false;
-
 const statementCards = [
   {
     ionicon: "star",
     header: "Mission",
     text:
-      "Aim to empower students to utilize Google’s technologies in working together to developsolutions to address the concerns of local communities and will be able to enhance the students’ personal and professional network in the field of technology. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-    isLeft: (isLeft = !isLeft),
+      "Aim to empower students to utilize Google’s technologies in working together to develop solutions that address the concerns of local communities and will be able to enhance the students’ personal and professional network in the field of technology.",
   },
   {
     ionicon: "airplane",
     header: "Vision",
     text:
-      "We envision Lasallian students to grow as developers for the community. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-    isLeft: (isLeft = !isLeft),
+      "We envision Lasallian students to grow as developers for the community. As such, these Lasallian developers to grow to be self-sufficient and effective community leaders that are able share their knowledge with oncoming benefactors and alike.",
   },
   {
     ionicon: "medal",
     header: "Goal",
     text:
-      "Aims to empower students to be community-driven developers. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-    isLeft: (isLeft = !isLeft),
+      "DLSU DSC Taft aims to empower students to be community-driven developers and improve the quality of developers' community foundation.",
   },
 ];
 
 class SectionAboutUs extends React.Component {
-  renderStatementCards = statementCards.map((item) => {
-    return (
-      <div className={styles.statementCard}>
-        <StatementCard
-          ionicon={item.ionicon}
-          header={item.header}
-          text={item.text}
-          isLeft={(isLeft = !isLeft)}
-        />
-      </div>
-    );
-  });
+  renderStatementCards = (isLeft) => {
+    return statementCards.map((item) => {
+      return (
+        <div className={styles.statementCard}>
+          <StatementCard
+            ionicon={item.ionicon}
+            header={item.header}
+            text={item.text}
+            isLeft={(isLeft = !isLeft)}
+          />
+        </div>
+      );
+    });
+  };
 
   render() {
     return (
@@ -68,7 +65,7 @@ class SectionAboutUs extends React.Component {
           </div>
         </div>
         <div className={styles.sectionAboutUsStatements}>
-          {this.renderStatementCards}
+          {this.renderStatementCards(true)}
         </div>
       </section>
     );

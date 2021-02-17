@@ -2,6 +2,7 @@ import React from "react";
 import Hero from "../Hero/Hero";
 import Navigation from "../Navigation/Navigation";
 import SectionAboutUs from "../SectionAboutUs/SectionAboutUs";
+import SectionMembers from "../SectionMembers/SectionMembers";
 import SectionTechnologyStack from "../SectionTechnologyStack/SectionTechnologyStack";
 import SectionUpcomingEvents from "../SectionUpcomingEvents/SectionUpcomingEvents";
 import Footer from "../Footer/Footer";
@@ -34,6 +35,7 @@ class App extends React.Component {
         <SectionUpcomingEvents id="sectionUpcomingEvents" />
         <SectionAboutUs id="sectionAboutUs" />
         <SectionTechnologyStack />
+        <SectionMembers />
         <Footer socialMediaBaubles={socialMediaBaubles} />
       </div>
     );

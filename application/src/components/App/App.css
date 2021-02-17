@@ -32,14 +32,12 @@ a {
   font-family: "Open Sans", "Lato", sans-serif;
   font-size: 64px;
   font-weight: 400;
-  color: black;
 }
 
 .header__medium {
   font-family: "Open Sans", "Lato", sans-serif;
   font-size: 36px;
   font-weight: 400;
-  color: black;
 }
 
 .header__light {
@@ -52,6 +50,10 @@ a {
 
 .sectionContainer {
   margin: 0 8%;
+}
+
+.fullScreen {
+  height: 100vh;
 }
 
 .button__blue {

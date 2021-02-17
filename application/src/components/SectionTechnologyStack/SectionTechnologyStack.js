@@ -14,7 +14,7 @@ const technologyCards = [
     hoverColor: "#4285f4",
     lighterHoverColor: "#e5e5e5",
     subHeaderLine:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+      "Sharpen your general Developer tools needed for any job, regardless of speciality.",
   },
   {
     ionicon: "cog-outline",
@@ -22,7 +22,7 @@ const technologyCards = [
     hoverColor: "#ea4335",
     lighterHoverColor: "#e5e5e5",
     subHeaderLine:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+      "Develop intelligent systems that solve problems without supervision, following rules that you set.",
   },
   {
     ionicon: "globe-outline",
@@ -30,7 +30,7 @@ const technologyCards = [
     hoverColor: "#fbbc05",
     lighterHoverColor: "#e5e5e5",
     subHeaderLine:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+      "Deploy responsive, modern websites that properly address modern business problems.",
   },
   {
     ionicon: "phone-portrait-outline",
@@ -38,7 +38,7 @@ const technologyCards = [
     hoverColor: "#34a853",
     lighterHoverColor: "#e5e5e5",
     subHeaderLine:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+      "Build swift and convenient Mobile applications using relevant and efficient technology.",
   },
 ];
 
@@ -69,7 +69,7 @@ class SectionAboutUs extends React.Component {
             <h1 className="header--medium">
               {technologyCards[this.state.selectedCard - 1].headerLine}
             </h1>
-            <p>{technologyCards[this.state.selectedCard - 1].description}</p>
+            <p>{technologyCards[this.state.selectedCard - 1].subHeaderLine}</p>
           </div>
         </div>
       </section>

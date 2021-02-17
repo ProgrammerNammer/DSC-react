@@ -13,6 +13,7 @@ import "./SectionUpcomingEvents.css";
  *  > Load all EventCard(s) from a local JSON file
  */
 import Event_1 from "../../assets/images/event-1.jpg";
+import UpcomingEvent from "../../assets/images/Upcoming_Event.png";
 
 //  Instantiate the EventCard(s) here
 const spotlightCards = [
@@ -56,13 +57,13 @@ const spotlightCards = [
 
 const eventCard = [
   {
-    image: Event_1,
-    alternative: "Birth of DLSU",
-    headline:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
-    date: "January 1, 2021",
+    image: UpcomingEvent,
+    alternative: "Welcome to Skills Level Up!",
+    headline: "Welcome to Skills Level Up!",
+    date: "February 27, 2021 4:00 PM - 6:00 PM",
     text:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+      "Hello Students, Get an opportunity to listen and learn from Googlers and industry experts sharing knowledge and skills to prepare yourself for your future career; From resume building and interview tips, personal branding, tech and non-tech skills development and many more! This is a great opportunity to bring members of your community together to learn something new! ",
+    link: "events.withgoogle.com/skillslevelup/",
   },
 ];
 
@@ -88,6 +89,7 @@ class SectionUpcomingEvents extends React.Component {
           headline={item.headline}
           date={item.date}
           text={item.text}
+          link={item.link}
         />
       </div>
     );
