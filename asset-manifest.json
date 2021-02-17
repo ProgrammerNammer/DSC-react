@@ -1,25 +1,33 @@
 {
   "files": {
-    "main.css": "/DSC-react/static/css/main.446f3dc0.chunk.css",
-    "main.js": "/DSC-react/static/js/main.a50b6653.chunk.js",
-    "main.js.map": "/DSC-react/static/js/main.a50b6653.chunk.js.map",
+    "main.css": "/DSC-react/static/css/main.193bb689.chunk.css",
+    "main.js": "/DSC-react/static/js/main.f42ac28d.chunk.js",
+    "main.js.map": "/DSC-react/static/js/main.f42ac28d.chunk.js.map",
     "runtime-main.js": "/DSC-react/static/js/runtime-main.cd31d771.js",
     "runtime-main.js.map": "/DSC-react/static/js/runtime-main.cd31d771.js.map",
     "static/css/2.a44c59e0.chunk.css": "/DSC-react/static/css/2.a44c59e0.chunk.css",
-    "static/js/2.f3e5a713.chunk.js": "/DSC-react/static/js/2.f3e5a713.chunk.js",
-    "static/js/2.f3e5a713.chunk.js.map": "/DSC-react/static/js/2.f3e5a713.chunk.js.map",
+    "static/js/2.dbdf6993.chunk.js": "/DSC-react/static/js/2.dbdf6993.chunk.js",
+    "static/js/2.dbdf6993.chunk.js.map": "/DSC-react/static/js/2.dbdf6993.chunk.js.map",
     "index.html": "/DSC-react/index.html",
     "static/css/2.a44c59e0.chunk.css.map": "/DSC-react/static/css/2.a44c59e0.chunk.css.map",
-    "static/css/main.446f3dc0.chunk.css.map": "/DSC-react/static/css/main.446f3dc0.chunk.css.map",
-    "static/js/2.f3e5a713.chunk.js.LICENSE.txt": "/DSC-react/static/js/2.f3e5a713.chunk.js.LICENSE.txt",
+    "static/css/main.193bb689.chunk.css.map": "/DSC-react/static/css/main.193bb689.chunk.css.map",
+    "static/js/2.dbdf6993.chunk.js.LICENSE.txt": "/DSC-react/static/js/2.dbdf6993.chunk.js.LICENSE.txt",
     "static/media/App.module.css": "/DSC-react/static/media/DLSU-Manila-Campus.da70497c.jpg",
+    "static/media/MemberAnnotations.module.css": "/DSC-react/static/media/MemberAnnotationBG.2af428b2.png",
+    "static/media/Member_1.a42ca465.jpg": "/DSC-react/static/media/Member_1.a42ca465.jpg",
+    "static/media/Member_2.9fb736bb.jpg": "/DSC-react/static/media/Member_2.9fb736bb.jpg",
+    "static/media/Member_3.38a95ad1.jpg": "/DSC-react/static/media/Member_3.38a95ad1.jpg",
+    "static/media/Member_4.134adff7.jpg": "/DSC-react/static/media/Member_4.134adff7.jpg",
+    "static/media/Member_5.351e0d83.jpg": "/DSC-react/static/media/Member_5.351e0d83.jpg",
+    "static/media/Member_6.653d0f5c.jpg": "/DSC-react/static/media/Member_6.653d0f5c.jpg",
+    "static/media/Upcoming_Event.5f054099.png": "/DSC-react/static/media/Upcoming_Event.5f054099.png",
     "static/media/event-1.71c74361.jpg": "/DSC-react/static/media/event-1.71c74361.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.cd31d771.js",
     "static/css/2.a44c59e0.chunk.css",
-    "static/js/2.f3e5a713.chunk.js",
-    "static/css/main.446f3dc0.chunk.css",
-    "static/js/main.a50b6653.chunk.js"
+    "static/js/2.dbdf6993.chunk.js",
+    "static/css/main.193bb689.chunk.css",
+    "static/js/main.f42ac28d.chunk.js"
   ]
 }
