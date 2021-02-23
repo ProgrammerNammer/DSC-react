@@ -1,7 +1,3 @@
-.statement-card {
-  display: flex;
-}
-
 .statement-card__left-part {
   flex-basis: 50%;
   display: flex;

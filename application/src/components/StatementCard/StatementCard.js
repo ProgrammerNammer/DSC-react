@@ -1,20 +1,16 @@
 import React from "react";
+import styles from "./StatementCard.module.css";
 import "./StatementCard.css";
 
-/**
- * TODO
- *  > Refactor class names
- *    > misnamed left-part and right-part
- */
 const StatementCard = ({
   ionicon,
   header = "[Input Header]",
   text = "[Input Text]",
-  isLeft,
+  isLeft = true,
 }) => {
   if (isLeft) {
     return (
-      <div className="statement-card">
+      <div className={styles.StatementCard}>
         <div className="statement-card__left-part">
           <div className="statement-card__icon statement-card__icon--left">
             <ion-icon name={ionicon} />
@@ -30,7 +26,7 @@ const StatementCard = ({
     );
   } else {
     return (
-      <div className="statement-card">
+      <div className={styles.StatementCard}>
         <div className="statement-card__right-part">
           <div className="statement-card__content statement-card__content--right-side">
             <h2>{header}</h2>

@@ -15,13 +15,13 @@ class EventCard extends React.Component {
           <h3>{this.props.date}</h3>
           <h2>{this.props.headline}</h2>
           <p>{this.props.text}</p>
-          {/* <a
+          <a
             className="button__blue"
             href=""
             onClick={(event) => event.preventDefault()}
           >
             View Details
-          </a> */}
+          </a>
         </div>
       </div>
     );
