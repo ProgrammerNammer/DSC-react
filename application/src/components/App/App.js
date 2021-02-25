@@ -35,7 +35,7 @@ class App extends React.Component {
         <SectionUpcomingEvents id="sectionUpcomingEvents" />
         <SectionAboutUs id="sectionAboutUs" />
         <SectionTechnologyStack />
-        {/* <SectionMembers /> */}
+        <SectionMembers />
         <Footer socialMediaBaubles={socialMediaBaubles} />
       </div>
     );

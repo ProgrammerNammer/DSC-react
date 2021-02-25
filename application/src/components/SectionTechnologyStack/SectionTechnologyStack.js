@@ -53,7 +53,7 @@ class SectionAboutUs extends React.Component {
 
   render() {
     return (
-      <section className="sectionContainer">
+      <section className="sectionFormat sectionDivision">
         <h1 className={`header__medium ${styles.headerLine}`}>
           Developer Technologies Fostered
         </h1>

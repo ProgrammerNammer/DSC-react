@@ -24,7 +24,7 @@ const MemberAnnotations = (props) => {
         The DLSU DSC Experience
       </h1>
       <div
-        className={`${styles.MemberAnnotations_MemberAnnotationsCards} sectionContainer`}
+        className={`${styles.MemberAnnotations_MemberAnnotationsCards} sectionFormat`}
       >
         {renderMemberAnnotationCards(props.memberAnnotationCards)}
       </div>

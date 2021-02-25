@@ -97,12 +97,12 @@ class SectionUpcomingEvents extends React.Component {
 
   render() {
     return (
-      <section id={this.props.id}>
-        <div className={styles.spotlight}>
-          <h1 className={`header__light ${styles.spotlight_headerLine}`}>
+      <section className="sectionDivision" id={this.props.id}>
+        <div className={styles.Spotlight}>
+          <h1 className={`header__light ${styles.Spotlight_headerLine}`}>
             ORGANIZATION SPOTLIGHT
           </h1>
-          <div className={styles.spotlight_carousel}>
+          <div className={styles.Spotlight_carousel}>
             <div>
               <OwlCarousel
                 stagePadding={50}
@@ -114,7 +114,7 @@ class SectionUpcomingEvents extends React.Component {
             </div>
           </div>
         </div>
-        <div className={`${styles.upcomingEvent} sectionContainer`}>
+        <div className={`${styles.upcomingEvent} sectionFormat`}>
           <h1 className="header__medium">Upcoming Event</h1>
           {this.renderEventCard}
         </div>

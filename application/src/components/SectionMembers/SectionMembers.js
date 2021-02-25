@@ -85,7 +85,6 @@ class SectionMembers extends React.Component {
             title={item.title}
             description={item.description}
             image={item.image}
-            isLeft={(isLeft = !isLeft)}
           />
         </div>
       );
@@ -94,15 +93,17 @@ class SectionMembers extends React.Component {
 
   render() {
     return (
-      <section>
+      <section className="sectionDivision">
         <MemberAnnotations memberAnnotationCards={memberAnnotationCards} />
-        <div className={`sectionContainer ${styles.SectionMembers}`}>
+        <div
+          className={`sectionFormat sectionDivision ${styles.SectionMembers}`}
+        >
           <div className={styles.SectionMembers_header}>
             <h1 className="header__light">Become A Member</h1>
             <h1 className="header__heavy">We Are Looking For</h1>
           </div>
           <div className={styles.SectionMembers_memberRequirementsCards}>
-            {this.renderMemberRequirementCards(true)}
+            {this.renderMemberRequirementCards()}
           </div>
         </div>
         <div className={styles.SignUpForm} id="BecomeAMember">

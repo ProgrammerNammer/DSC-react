@@ -1,5 +1,5 @@
 .SectionMembers_header {
-  padding: 50px 0;
+  padding-bottom: 50px;
 }
 
 .SectionMembers_memberRequirementsCards {
@@ -8,6 +8,10 @@
 
 .MemberRequirementCard {
   margin-bottom: 80px;
+}
+
+.MemberRequirementCard:last-child {
+  margin-bottom: 0;
 }
 
 .SignUpForm {
