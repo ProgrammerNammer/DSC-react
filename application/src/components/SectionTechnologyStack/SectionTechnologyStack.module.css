@@ -22,4 +22,18 @@
 
 .content_article p {
   font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.content_technologyStack {
+}
+
+.technologyStack_instance {
+  max-width: 50px;
+  max-height: 50px;
+  margin-right: 10px;
+}
+
+.technologyStack_instance:last-child {
+  margin-right: 0;
 }

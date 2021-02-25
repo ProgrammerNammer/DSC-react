@@ -15,9 +15,7 @@ class SpotlightCard extends React.Component {
   render() {
     return (
       <div className={styles.spotlight}>
-        <div>
-          <img src={this.props.image} alt={this.props.alternative} />
-        </div>
+        <img src={this.props.image} alt={this.props.alternative} />
         <div className={styles.spotlight__content}>
           <span>{this.props.headLine}</span>
           <p>{this.props.text}</p>

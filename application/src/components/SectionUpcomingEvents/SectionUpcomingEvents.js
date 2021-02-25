@@ -12,6 +12,10 @@ import styles from "./SectionUpcomingEvents.module.css";
  *  > Load all EventCard(s) from a local JSON file
  */
 import Event_1 from "../../assets/images/event-1.jpg";
+import Event_2 from "../../assets/images/event-2.jpg";
+import Event_3 from "../../assets/images/event-3.PNG";
+import Event_4 from "../../assets/images/event-4.png";
+import Event_5 from "../../assets/images/event-5.png";
 import UpcomingEvent from "../../assets/images/Upcoming_Event.png";
 
 //  Instantiate the EventCard(s) here
@@ -20,37 +24,36 @@ const spotlightCards = [
     image: Event_1,
     alternative: "Start of DLSU DSC",
     headLine: "Birth of DLSU DSC",
-    text: "Here throughout, DLSU DSC solidified from its founders.",
+    text:
+      "Here throughout, DLSU DSC solidified from its founders. Rekindling the passion for self-driven developers.",
   },
   {
-    image: Event_1,
-    alternative: "Start of DLSU DSC",
-    headLine: "Birth of DLSU DSC",
-    text: "Here throughout, DLSU DSC solidified from its founders.",
+    image: Event_2,
+    alternative: "First General Meeting",
+    headLine: "First General Meeting",
+    text:
+      "Getting to know your colleagues and this student organization's goals and future events! Meet you there!",
   },
   {
-    image: Event_1,
-    alternative: "Start of DLSU DSC",
-    headLine: "Birth of DLSU DSC",
-    text: "Here throughout, DLSU DSC solidified from its founders.",
+    image: Event_3,
+    alternative: "Engineering Committee Meeting",
+    headLine: "Engineering Committee Meeting",
+    text:
+      "Brainstorming events and opportunities for members under the Engineering Team.",
   },
   {
-    image: Event_1,
-    alternative: "Start of DLSU DSC",
-    headLine: "Birth of DLSU DSC",
-    text: "Here throughout, DLSU DSC solidified from its founders.",
+    image: Event_4,
+    alternative: "#GCPinas",
+    headLine: "#GCPinas",
+    text:
+      "Introduction to Google's Cloud Computing Platform, GCP. Understand how Cloud Computing works for free!",
   },
   {
-    image: Event_1,
-    alternative: "Start of DLSU DSC",
-    headLine: "Birth of DLSU DSC",
-    text: "Here throughout, DLSU DSC solidified from its founders.",
-  },
-  {
-    image: Event_1,
-    alternative: "Start of DLSU DSC",
-    headLine: "Birth of DLSU DSC",
-    text: "Here throughout, DLSU DSC solidified from its founders.",
+    image: Event_5,
+    alternative: "Solution Challenge 2021",
+    headLine: "Solution Challenge 2021",
+    text:
+      "Embarking qualified members to craft a sustainable solution for the incoming Google's Solution Challenge 2021.",
   },
 ];
 

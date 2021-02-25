@@ -3,7 +3,7 @@ import StatementCard from "../StatementCard/StatementCard";
 import AboutUs from "../../assets/images/event-1.jpg";
 import styles from "./SectionAboutUs.module.css";
 
-import Event_2 from "../../assets/images/event-2.jpg";
+import BG from "../../assets/images/Qualifications_3.jpg";
 
 const statementCards = [
   {
@@ -16,7 +16,7 @@ const statementCards = [
     text:
       "DSC Taft aims to empower students to utilize Google’s technologies in working together to develop solutions to address the concerns of local communities and will be able to enhance the students’ personal and professional network in the field of technology.",
     isPrimary: true,
-    backgroundImage: Event_2,
+    backgroundImage: BG,
   },
   {
     header: "Goal",

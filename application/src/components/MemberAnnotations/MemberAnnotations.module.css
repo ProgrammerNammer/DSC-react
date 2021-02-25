@@ -19,4 +19,9 @@
 
 .MemberAnnotationCard {
   margin-right: 30px;
+  flex-basis: 100%;
+}
+
+.MemberAnnotationCard:last-child {
+  margin-right: 0;
 }
