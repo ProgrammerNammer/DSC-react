@@ -2,7 +2,6 @@ import React from "react";
 import StatementCard from "../StatementCard/StatementCard";
 import AboutUs from "../../assets/images/event-1.jpg";
 import styles from "./SectionAboutUs.module.css";
-import "./SectionAboutUs.css";
 
 import Event_2 from "../../assets/images/event-2.jpg";
 

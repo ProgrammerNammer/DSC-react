@@ -1,6 +1,5 @@
 import React from "react";
 import styles from "./StatementCard.module.css";
-import "./StatementCard.css";
 
 const StatementCard = ({
   header = "[Input Header]",

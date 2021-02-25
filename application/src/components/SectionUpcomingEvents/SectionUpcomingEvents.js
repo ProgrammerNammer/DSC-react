@@ -6,7 +6,6 @@ import EventCard from "../EventCard/EventCard";
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
 import styles from "./SectionUpcomingEvents.module.css";
-import "./SectionUpcomingEvents.css";
 
 /**
  * TODO

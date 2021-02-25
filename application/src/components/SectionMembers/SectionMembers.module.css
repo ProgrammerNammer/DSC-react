@@ -13,25 +13,3 @@
 .MemberRequirementCard:last-child {
   margin-bottom: 0;
 }
-
-.SignUpForm {
-  margin-top: 50px;
-  padding: 100px 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: #4285f4;
-  color: white;
-}
-
-.SignUpForm p {
-  font-size: 25px;
-  padding-bottom: 50px;
-}
-
-.SignUpForm_GoogleForm {
-  background-color: white;
-  padding: 50px;
-  border-radius: 20px;
-}
