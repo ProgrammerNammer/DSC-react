@@ -3,7 +3,9 @@
  *  from: css-tricks.com/snippets/css/typewriter-effect/#more
  */
 
-var colorRotation = ["#4285f4", "#ea4335", "#fbbc05", "#34a853"];
+//  Temporarily removed colorRotation
+// var colorRotation = ["#4285f4", "#ea4335", "#fbbc05", "#34a853"];
+var colorRotation = ["white"];
 var TxtType = function (el, toRotate, period) {
   this.toRotate = toRotate;
   this.el = el;
