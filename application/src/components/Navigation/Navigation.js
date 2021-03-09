@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-scroll";
+import { Link as LinkRouter } from "react-router-dom";
 import styles from "./Navigation.module.css";
 import NavigationItem from "../NavigationItem/NavigationItem";
 import GDGLogo from "../../assets/images/DSC-logo.png";
@@ -10,7 +11,8 @@ const navigationItems = [
   {
     itemName: "Become A Member",
     itemHoverColor: "#4285f4",
-    navigateToID: "BecomeAMember",
+    isRouterLink: true,
+    navigateToLink: "/recruitment",
   },
   {
     itemName: "Organizational Events",
@@ -67,6 +69,8 @@ class Navigation extends React.Component {
           <NavigationItem
             itemName={item.itemName}
             itemHoverColor={item.itemHoverColor}
+            isRouterLink={item.isRouterLink}
+            navigateToLink={item.navigateToLink}
             navigateToID={item.navigateToID}
             stickyNavigation={this.state.stickyNavigation}
           />
@@ -77,18 +81,10 @@ class Navigation extends React.Component {
   render() {
     return (
       <nav className={this.renderNavigationState()}>
-        <Link
-          className={styles.logo}
-          activeClass="active"
-          to="hero"
-          spy={true}
-          smooth={true}
-          offset={-70}
-          duration={800}
-        >
+        <LinkRouter className={styles.logo} to="/">
           <span>DLSU DSC</span>
           <img src={GDGLogo} alt="DSC-Logo" />
-        </Link>
+        </LinkRouter>
         <div className={styles.navigationList}>
           {this.renderNavigationItems()}
         </div>

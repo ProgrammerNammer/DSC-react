@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./NavigationItem.module.css";
 import { Link } from "react-scroll";
+import { Link as LinkRouter } from "react-router-dom";
 import "./NavigationItem.css";
 
 class NavigationItem extends React.Component {
@@ -41,22 +42,36 @@ class NavigationItem extends React.Component {
   };
 
   render() {
-    return (
-      <Link
-        className={styles.navigationItem}
-        style={this.getStyle()}
-        onMouseEnter={this.toggleHover}
-        onMouseLeave={this.toggleHover}
-        activeClass="active"
-        to={this.props.navigateToID}
-        spy={true}
-        smooth={true}
-        offset={-70}
-        duration={800}
-      >
-        {this.props.itemName}
-      </Link>
-    );
+    if (this.props.isRouterLink) {
+      return (
+        <LinkRouter
+          to={this.props.navigateToLink}
+          style={this.getStyle()}
+          className={styles.navigationItem}
+          onMouseEnter={this.toggleHover}
+          onMouseLeave={this.toggleHover}
+        >
+          {this.props.itemName}
+        </LinkRouter>
+      );
+    } else {
+      return (
+        <Link
+          className={styles.navigationItem}
+          style={this.getStyle()}
+          onMouseEnter={this.toggleHover}
+          onMouseLeave={this.toggleHover}
+          activeClass="active"
+          to={this.props.navigateToID}
+          spy={true}
+          smooth={true}
+          offset={-70}
+          duration={800}
+        >
+          {this.props.itemName}
+        </Link>
+      );
+    }
   }
 }
 
