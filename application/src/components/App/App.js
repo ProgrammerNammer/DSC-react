@@ -1,5 +1,6 @@
 import React from "react";
 import { BrowserRouter, Route } from "react-router-dom";
+import ScrollToTop from "./ScrollToTop";
 import Hero from "../Hero/Hero";
 import Navigation from "../Navigation/Navigation";
 import SectionAboutUs from "../SectionAboutUs/SectionAboutUs";
@@ -27,9 +28,16 @@ const socialMediaBaubles = [
 ];
 
 class App extends React.Component {
+  componentDidUpdate(prevProps) {
+    if (this.props.location !== prevProps.location) {
+      window.scrollTo(0, 0);
+    }
+  }
+
   render() {
     return (
       <BrowserRouter>
+        <ScrollToTop />
         <Navigation />
         <Route path="/" exact>
           <header className={styles.hero} id="hero">
