@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-scroll";
 import { Link as LinkRouter } from "react-router-dom";
 import styles from "./Navigation.module.css";
 import NavigationItem from "../NavigationItem/NavigationItem";
@@ -32,9 +31,7 @@ const navigationItems = [
 ];
 
 class Navigation extends React.Component {
-  state = {
-    stickyNavigation: false,
-  };
+  state = { stickyNavigation: false };
 
   componentDidMount() {
     window.addEventListener("scroll", this.toggleStickyNavigation);

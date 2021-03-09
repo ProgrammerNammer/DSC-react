@@ -78,39 +78,35 @@ const memberRequirementCards = [
   },
 ];
 
-class SectionMembers extends React.Component {
-  renderMemberRequirementCards = () => {
-    return memberRequirementCards.map((item) => {
-      return (
-        <div className={styles.MemberRequirementCard}>
-          <MemberRequirementCard
-            title={item.title}
-            description={item.description}
-            image={item.image}
-          />
-        </div>
-      );
-    });
-  };
-
-  render() {
+const renderMemberRequirementCards = () => {
+  return memberRequirementCards.map((item) => {
     return (
-      <section className="sectionDivision">
-        <MemberAnnotations memberAnnotationCards={memberAnnotationCards} />
-        <div
-          className={`sectionFormat sectionDivision ${styles.SectionMembers}`}
-        >
-          <div className={styles.SectionMembers_header}>
-            <h1 className="header__light">Become A Member</h1>
-            <h1 className="header__heavy">We Are Looking For</h1>
-          </div>
-          <div className={styles.SectionMembers_memberRequirementsCards}>
-            {this.renderMemberRequirementCards()}
-          </div>
-        </div>
-      </section>
+      <div className={styles.MemberRequirementCard}>
+        <MemberRequirementCard
+          title={item.title}
+          description={item.description}
+          image={item.image}
+        />
+      </div>
     );
-  }
-}
+  });
+};
+
+const SectionMembers = () => {
+  return (
+    <section className="sectionDivision">
+      <MemberAnnotations memberAnnotationCards={memberAnnotationCards} />
+      <div className={`sectionFormat sectionDivision ${styles.SectionMembers}`}>
+        <div className={styles.SectionMembers_header}>
+          <h1 className="header__light">Become A Member</h1>
+          <h1 className="header__heavy">We Are Looking For</h1>
+        </div>
+        <div className={styles.SectionMembers_memberRequirementsCards}>
+          {renderMemberRequirementCards(memberRequirementCards)}
+        </div>
+      </div>
+    </section>
+  );
+};
 
 export default SectionMembers;

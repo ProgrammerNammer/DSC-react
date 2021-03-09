@@ -1,5 +1,5 @@
-import React from "react";
-import { BrowserRouter, Route } from "react-router-dom";
+import React, { useEffect } from "react";
+import { BrowserRouter, Route, useLocation } from "react-router-dom";
 import ScrollToTop from "./ScrollToTop";
 import Hero from "../Hero/Hero";
 import Navigation from "../Navigation/Navigation";
@@ -27,34 +27,26 @@ const socialMediaBaubles = [
   { referenceLink: "#", ionicon: "mail-outline", itemHoverColor: "#ea4335" },
 ];
 
-class App extends React.Component {
-  componentDidUpdate(prevProps) {
-    if (this.props.location !== prevProps.location) {
-      window.scrollTo(0, 0);
-    }
-  }
-
-  render() {
-    return (
-      <BrowserRouter>
-        <ScrollToTop />
-        <Navigation />
-        <Route path="/" exact>
-          <header className={styles.hero} id="hero">
-            <Hero socialMediaBaubles={socialMediaBaubles} />
-          </header>
-          <SectionUpcomingEvents id="sectionUpcomingEvents" />
-          <SectionAboutUs id="sectionAboutUs" />
-          <SectionTechnologyStack />
-        </Route>
-        <Route path="/recruitment" exact>
-          <SectionMembers />
-          <SectionMemberRegistration />
-        </Route>
-        <Footer socialMediaBaubles={socialMediaBaubles} />
-      </BrowserRouter>
-    );
-  }
-}
+const App = () => {
+  return (
+    <BrowserRouter>
+      <ScrollToTop />
+      <Navigation />
+      <Route path="/" exact>
+        <header className={styles.hero} id="hero">
+          <Hero socialMediaBaubles={socialMediaBaubles} />
+        </header>
+        <SectionUpcomingEvents id="sectionUpcomingEvents" />
+        <SectionAboutUs id="sectionAboutUs" />
+        <SectionTechnologyStack />
+      </Route>
+      <Route path="/recruitment" exact>
+        <SectionMembers />
+        <SectionMemberRegistration />
+      </Route>
+      <Footer socialMediaBaubles={socialMediaBaubles} />
+    </BrowserRouter>
+  );
+};
 
 export default App;
