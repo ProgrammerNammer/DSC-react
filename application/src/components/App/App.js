@@ -1,4 +1,5 @@
 import React from "react";
+import { BrowserRouter, Route } from "react-router-dom";
 import Hero from "../Hero/Hero";
 import Navigation from "../Navigation/Navigation";
 import SectionAboutUs from "../SectionAboutUs/SectionAboutUs";
@@ -28,18 +29,22 @@ const socialMediaBaubles = [
 class App extends React.Component {
   render() {
     return (
-      <div>
-        <header className={styles.hero} id="hero">
-          <Navigation />
-          <Hero socialMediaBaubles={socialMediaBaubles} />
-        </header>
-        <SectionUpcomingEvents id="sectionUpcomingEvents" />
-        <SectionAboutUs id="sectionAboutUs" />
-        <SectionTechnologyStack />
-        <SectionMembers />
-        <SectionMemberRegistration />
+      <BrowserRouter>
+        <Navigation />
+        <Route path="/" exact>
+          <header className={styles.hero} id="hero">
+            <Hero socialMediaBaubles={socialMediaBaubles} />
+          </header>
+          <SectionUpcomingEvents id="sectionUpcomingEvents" />
+          <SectionAboutUs id="sectionAboutUs" />
+          <SectionTechnologyStack />
+        </Route>
+        <Route path="/recruitment" exact>
+          <SectionMembers />
+          <SectionMemberRegistration />
+        </Route>
         <Footer socialMediaBaubles={socialMediaBaubles} />
-      </div>
+      </BrowserRouter>
     );
   }
 }
