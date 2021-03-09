@@ -2,14 +2,14 @@ import React from "react";
 import OwlCarousel from "react-owl-carousel";
 import $ from "jquery";
 import SpotlightCard from "../SpotlightCard/SpotlightCard";
-import EventCard from "../EventCard/EventCard";
+import EventItem from "../EventItem/EventItem";
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
 import styles from "./SectionUpcomingEvents.module.css";
 
 /**
  * TODO
- *  > Load all EventCard(s) from a local JSON file
+ *  > Load all EventItem(s) from a local JSON file
  */
 import Event_1 from "../../assets/images/event-1.jpg";
 import Event_2 from "../../assets/images/event-2.jpg";
@@ -18,7 +18,7 @@ import Event_4 from "../../assets/images/event-4.png";
 import Event_5 from "../../assets/images/event-5.png";
 import UpcomingEvent from "../../assets/images/Upcoming_Event.png";
 
-//  Instantiate the EventCard(s) here
+//  Instantiate the EventItem(s) here
 const spotlightCards = [
   {
     image: Event_1,
@@ -69,60 +69,58 @@ const eventCard = [
   },
 ];
 
-class SectionUpcomingEvents extends React.Component {
-  renderSpotlightCards = spotlightCards.map((item) => {
-    return (
-      <SpotlightCard
+const renderSpotlightCards = spotlightCards.map((item) => {
+  return (
+    <SpotlightCard
+      image={item.image}
+      alternative={item.alternative}
+      headLine={item.headLine}
+      text={item.text}
+      className={`item`}
+    />
+  );
+});
+
+const renderEventItem = eventCard.map((item) => {
+  return (
+    <div>
+      <EventItem
         image={item.image}
         alternative={item.alternative}
-        headLine={item.headLine}
+        headline={item.headline}
+        date={item.date}
         text={item.text}
-        className={`item`}
+        link={item.link}
       />
-    );
-  });
+    </div>
+  );
+});
 
-  renderEventCard = eventCard.map((item) => {
-    return (
-      <div>
-        <EventCard
-          image={item.image}
-          alternative={item.alternative}
-          headline={item.headline}
-          date={item.date}
-          text={item.text}
-          link={item.link}
-        />
-      </div>
-    );
-  });
-
-  render() {
-    return (
-      <section className="sectionDivision" id={this.props.id}>
-        <div className={styles.Spotlight}>
-          <h1 className={`header__light ${styles.Spotlight_headerLine}`}>
-            ORGANIZATION SPOTLIGHT
-          </h1>
-          <div className={styles.Spotlight_carousel}>
-            <div>
-              <OwlCarousel
-                stagePadding={50}
-                items={Math.floor($(window).width() / 300)}
-                margin={30}
-              >
-                {this.renderSpotlightCards}
-              </OwlCarousel>
-            </div>
+const SectionUpcomingEvents = (props) => {
+  return (
+    <section className="sectionDivision" id={props.id}>
+      <div className={styles.Spotlight}>
+        <h1 className={`header__light ${styles.Spotlight_headerLine}`}>
+          ORGANIZATION SPOTLIGHT
+        </h1>
+        <div className={styles.Spotlight_carousel}>
+          <div>
+            <OwlCarousel
+              stagePadding={50}
+              items={Math.floor($(window).width() / 300)}
+              margin={30}
+            >
+              {renderSpotlightCards}
+            </OwlCarousel>
           </div>
         </div>
-        <div className={`${styles.upcomingEvent} sectionFormat`}>
-          <h1 className="header__medium">Upcoming Event</h1>
-          {this.renderEventCard}
-        </div>
-      </section>
-    );
-  }
-}
+      </div>
+      <div className={`${styles.upcomingEvent} sectionFormat`}>
+        <h1 className="header__medium">Upcoming Event</h1>
+        {renderEventItem}
+      </div>
+    </section>
+  );
+};
 
 export default SectionUpcomingEvents;

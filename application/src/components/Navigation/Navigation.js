@@ -37,10 +37,6 @@ class Navigation extends React.Component {
     window.addEventListener("scroll", this.toggleStickyNavigation);
   }
 
-  componentWillUnmount() {
-    window.removeEventListener("scroll");
-  }
-
   toggleStickyNavigation = () => {
     if (window.pageYOffset > 0) {
       if (!this.state.stickyNavigation) {

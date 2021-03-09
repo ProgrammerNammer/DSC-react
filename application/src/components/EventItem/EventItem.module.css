@@ -1,4 +1,4 @@
-.eventCard {
+.eventItem {
   display: flex;
   border: 1px #cfcfcf solid;
   border-radius: 10px;
@@ -7,46 +7,46 @@
   min-height: 250px;
 }
 
-.eventCard_image {
+.eventItem_image {
   flex: 0 0 20%;
   display: flex;
   justify-content: center;
 }
 
-.eventCard_image img {
+.eventItem_image img {
   border-radius: 50%;
   width: 150px;
   height: 150px;
   object-fit: cover;
 }
 
-.eventCard_column {
+.eventItem_column {
   flex: 1 1 5%;
 }
 
-.eventCard_content {
+.eventItem_content {
   flex: 1 1 100%;
   display: flex;
   flex-direction: column;
 }
 
-.eventCard_content h2 {
+.eventItem_content h2 {
   margin-bottom: 10px;
 }
 
-.eventCard_content h3 {
+.eventItem_content h3 {
   font-size: 16px;
   font-weight: 400;
   margin-bottom: 2px;
   color: gray;
 }
 
-.eventCard_content p {
+.eventItem_content p {
   flex: 0 1 100%;
   text-align: justify;
 }
 
-.eventCard_content a {
+.eventItem_content a {
   display: flex;
   justify-content: center;
   align-content: center;

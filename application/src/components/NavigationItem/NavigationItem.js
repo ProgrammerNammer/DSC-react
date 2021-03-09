@@ -2,7 +2,6 @@ import React from "react";
 import styles from "./NavigationItem.module.css";
 import { Link } from "react-scroll";
 import { Link as LinkRouter } from "react-router-dom";
-import "./NavigationItem.css";
 
 class NavigationItem extends React.Component {
   state = { hoveredOn: false };

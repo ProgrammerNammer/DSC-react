@@ -11,18 +11,16 @@ import styles from "./SpotlightCard.module.css";
  *  >   Load all spotlightCards to load from a local JSON file
  */
 
-class SpotlightCard extends React.Component {
-  render() {
-    return (
-      <div className={styles.spotlight}>
-        <img src={this.props.image} alt={this.props.alternative} />
-        <div className={styles.spotlight__content}>
-          <span>{this.props.headLine}</span>
-          <p>{this.props.text}</p>
-        </div>
+const SpotlightCard = (props) => {
+  return (
+    <div className={styles.spotlight}>
+      <img src={props.image} alt={props.alternative} />
+      <div className={styles.spotlight__content}>
+        <span>{props.headLine}</span>
+        <p>{props.text}</p>
       </div>
-    );
-  }
-}
+    </div>
+  );
+};
 
 export default SpotlightCard;
