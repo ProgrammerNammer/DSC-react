@@ -2,6 +2,7 @@ import React from "react";
 import { Link as LinkRouter } from "react-router-dom";
 import styles from "./Navigation.module.css";
 import NavigationItem from "../NavigationItem/NavigationItem";
+import GDGLogoWhite from "../../assets/images/DSC-logo-white.png";
 import GDGLogo from "../../assets/images/DSC-logo.png";
 import "./Navigation.css";
 
@@ -30,6 +31,29 @@ const navigationItems = [
   },
 ];
 
+const renderNavigationState = ({ stickyNavigation }) => {
+  if (stickyNavigation) {
+    return styles.navigation__sticky;
+  }
+};
+
+const renderNavigationItems = ({ stickyNavigation }) => {
+  return navigationItems.map((item) => {
+    return (
+      <div className={styles.navigationItem}>
+        <NavigationItem
+          itemName={item.itemName}
+          itemHoverColor={item.itemHoverColor}
+          isRouterLink={item.isRouterLink}
+          navigateToLink={item.navigateToLink}
+          navigateToID={item.navigateToID}
+          stickyNavigation={stickyNavigation}
+        />
+      </div>
+    );
+  });
+};
+
 class Navigation extends React.Component {
   state = { stickyNavigation: false };
 
@@ -49,37 +73,18 @@ class Navigation extends React.Component {
     }
   };
 
-  renderNavigationState = () => {
-    if (this.state.stickyNavigation) {
-      return styles.navigation__sticky;
-    }
-  };
-
-  renderNavigationItems = () =>
-    navigationItems.map((item) => {
-      return (
-        <div className={styles.navigationItem}>
-          <NavigationItem
-            itemName={item.itemName}
-            itemHoverColor={item.itemHoverColor}
-            isRouterLink={item.isRouterLink}
-            navigateToLink={item.navigateToLink}
-            navigateToID={item.navigateToID}
-            stickyNavigation={this.state.stickyNavigation}
-          />
-        </div>
-      );
-    });
-
   render() {
     return (
-      <nav className={this.renderNavigationState()}>
+      <nav className={renderNavigationState(this.state)}>
         <LinkRouter className={styles.logo} to="/">
-          <span>DLSU DSC</span>
-          <img src={GDGLogo} alt="DSC-Logo" />
+          <img
+            src={this.state.stickyNavigation ? GDGLogo : GDGLogoWhite}
+            alt="DSC-Logo"
+          />
+          <span>Developer Student Club Taft</span>
         </LinkRouter>
         <div className={styles.navigationList}>
-          {this.renderNavigationItems()}
+          {renderNavigationItems(this.state)}
         </div>
       </nav>
     );

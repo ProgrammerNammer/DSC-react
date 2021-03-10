@@ -5,7 +5,7 @@
 }
 
 .navigation__sticky .logo span {
-  color: green;
+  color: #676c72;
 }
 
 .logo {
@@ -18,8 +18,9 @@
 
 .logo span {
   font-weight: 500;
-  font-family: "Oswald", sans-serif;
-  font-size: 220%;
+  font-family: "GoogleSansRegular", sans-serif;
+  font-size: 140%;
+  margin-left: 15px;
   color: white;
   line-height: 1;
 }

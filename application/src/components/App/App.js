@@ -10,6 +10,7 @@ import SectionTechnologyStack from "../SectionTechnologyStack/SectionTechnologyS
 import SectionUpcomingEvents from "../SectionUpcomingEvents/SectionUpcomingEvents";
 import Footer from "../Footer/Footer";
 import styles from "./App.module.css";
+import "product-sans-webfont";
 import "./App.css";
 
 /*  TODO
