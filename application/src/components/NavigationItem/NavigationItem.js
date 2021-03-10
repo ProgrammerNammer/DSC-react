@@ -8,12 +8,13 @@ const getStyle = ({ stickyNavigation, itemHoverColor }, { hoveredOn }) => {
 
   if (hoveredOn && stickyNavigation) {
     style = {
-      color: "white",
-      backgroundColor: itemHoverColor,
+      color: "black",
+      borderBottom: `5px solid ${itemHoverColor}`,
     };
   } else if (!hoveredOn && stickyNavigation) {
     style = {
       color: "black",
+      borderBottom: `5px solid transparent`,
     };
   } else if (hoveredOn && !stickyNavigation) {
     style = {
@@ -24,10 +25,6 @@ const getStyle = ({ stickyNavigation, itemHoverColor }, { hoveredOn }) => {
     style = {
       color: "white",
     };
-  }
-
-  if (stickyNavigation) {
-    style.fontWeight = 400;
   }
 
   return style;
@@ -44,11 +41,13 @@ class NavigationItem extends React.Component {
     if (this.props.isRouterLink) {
       return (
         <LinkRouter
-          to={this.props.navigateToLink}
+          className={`${styles.navigationItem} ${
+            this.props.stickyNavigation ? styles.sticky : styles.nonSticky
+          }`}
           style={getStyle(this.props, this.state)}
-          className={styles.navigationItem}
           onMouseEnter={this.toggleHover}
           onMouseLeave={this.toggleHover}
+          to={this.props.navigateToLink}
         >
           {this.props.itemName}
         </LinkRouter>
@@ -56,7 +55,9 @@ class NavigationItem extends React.Component {
     } else {
       return (
         <Link
-          className={styles.navigationItem}
+          className={`${styles.navigationItem} ${
+            this.props.stickyNavigation ? styles.sticky : styles.nonSticky
+          }`}
           style={getStyle(this.props, this.state)}
           onMouseEnter={this.toggleHover}
           onMouseLeave={this.toggleHover}
@@ -75,7 +76,6 @@ class NavigationItem extends React.Component {
 }
 
 NavigationItem.defaultProps = {
-  itemHoverColor: "Blue",
   itemName: "Input Item Name",
   navigateToID: "hero",
 };
