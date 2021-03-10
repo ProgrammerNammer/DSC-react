@@ -3,6 +3,36 @@ import styles from "./NavigationItem.module.css";
 import { Link } from "react-scroll";
 import { Link as LinkRouter } from "react-router-dom";
 
+const getStyle = ({ stickyNavigation, itemHoverColor }, { hoveredOn }) => {
+  var style;
+
+  if (hoveredOn && stickyNavigation) {
+    style = {
+      color: "white",
+      backgroundColor: itemHoverColor,
+    };
+  } else if (!hoveredOn && stickyNavigation) {
+    style = {
+      color: "black",
+    };
+  } else if (hoveredOn && !stickyNavigation) {
+    style = {
+      color: "white",
+      backgroundColor: itemHoverColor,
+    };
+  } else if (!hoveredOn && !stickyNavigation) {
+    style = {
+      color: "white",
+    };
+  }
+
+  if (stickyNavigation) {
+    style.fontWeight = 400;
+  }
+
+  return style;
+};
+
 class NavigationItem extends React.Component {
   state = { hoveredOn: false };
 
@@ -10,42 +40,12 @@ class NavigationItem extends React.Component {
     this.setState({ hoveredOn: !this.state.hoveredOn });
   };
 
-  getStyle = () => {
-    var style;
-
-    if (this.state.hoveredOn && this.props.stickyNavigation) {
-      style = {
-        color: "white",
-        backgroundColor: this.props.itemHoverColor,
-      };
-    } else if (!this.state.hoveredOn && this.props.stickyNavigation) {
-      style = {
-        color: "black",
-      };
-    } else if (this.state.hoveredOn && !this.props.stickyNavigation) {
-      style = {
-        color: "white",
-        backgroundColor: this.props.itemHoverColor,
-      };
-    } else if (!this.state.hoveredOn && !this.props.stickyNavigation) {
-      style = {
-        color: "white",
-      };
-    }
-
-    if (this.state.stickyNavigation) {
-      style.fontWeight = 400;
-    }
-
-    return style;
-  };
-
   render() {
     if (this.props.isRouterLink) {
       return (
         <LinkRouter
           to={this.props.navigateToLink}
-          style={this.getStyle()}
+          style={getStyle(this.props, this.state)}
           className={styles.navigationItem}
           onMouseEnter={this.toggleHover}
           onMouseLeave={this.toggleHover}
@@ -57,7 +57,7 @@ class NavigationItem extends React.Component {
       return (
         <Link
           className={styles.navigationItem}
-          style={this.getStyle()}
+          style={getStyle(this.props, this.state)}
           onMouseEnter={this.toggleHover}
           onMouseLeave={this.toggleHover}
           activeClass="active"
