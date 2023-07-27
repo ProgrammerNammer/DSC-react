@@ -1,22 +1,25 @@
 {
   "files": {
-    "main.css": "/DSC-react/static/css/main.514c2c29.chunk.css",
-    "main.js": "/DSC-react/static/js/main.ca177828.chunk.js",
-    "main.js.map": "/DSC-react/static/js/main.ca177828.chunk.js.map",
+    "main.css": "/DSC-react/static/css/main.35fa740d.chunk.css",
+    "main.js": "/DSC-react/static/js/main.cd0a8074.chunk.js",
+    "main.js.map": "/DSC-react/static/js/main.cd0a8074.chunk.js.map",
     "runtime-main.js": "/DSC-react/static/js/runtime-main.cd31d771.js",
     "runtime-main.js.map": "/DSC-react/static/js/runtime-main.cd31d771.js.map",
-    "static/css/2.a44c59e0.chunk.css": "/DSC-react/static/css/2.a44c59e0.chunk.css",
-    "static/js/2.7b3973f1.chunk.js": "/DSC-react/static/js/2.7b3973f1.chunk.js",
-    "static/js/2.7b3973f1.chunk.js.map": "/DSC-react/static/js/2.7b3973f1.chunk.js.map",
+    "static/css/2.7099686e.chunk.css": "/DSC-react/static/css/2.7099686e.chunk.css",
+    "static/js/2.ff3f9c84.chunk.js": "/DSC-react/static/js/2.ff3f9c84.chunk.js",
+    "static/js/2.ff3f9c84.chunk.js.map": "/DSC-react/static/js/2.ff3f9c84.chunk.js.map",
     "index.html": "/DSC-react/index.html",
-    "static/css/2.a44c59e0.chunk.css.map": "/DSC-react/static/css/2.a44c59e0.chunk.css.map",
-    "static/css/main.514c2c29.chunk.css.map": "/DSC-react/static/css/main.514c2c29.chunk.css.map",
-    "static/js/2.7b3973f1.chunk.js.LICENSE.txt": "/DSC-react/static/js/2.7b3973f1.chunk.js.LICENSE.txt",
+    "static/css/2.7099686e.chunk.css.map": "/DSC-react/static/css/2.7099686e.chunk.css.map",
+    "static/css/main.35fa740d.chunk.css.map": "/DSC-react/static/css/main.35fa740d.chunk.css.map",
+    "static/js/2.ff3f9c84.chunk.js.LICENSE.txt": "/DSC-react/static/js/2.ff3f9c84.chunk.js.LICENSE.txt",
     "static/media/CSS.4e67641b.png": "/DSC-react/static/media/CSS.4e67641b.png",
     "static/media/App.module.css": "/DSC-react/static/media/DLSU-Manila-Campus.da70497c.jpg",
+    "static/media/DSC-logo-white.e9082af3.png": "/DSC-react/static/media/DSC-logo-white.e9082af3.png",
+    "static/media/DSC-logo.81013281.png": "/DSC-react/static/media/DSC-logo.81013281.png",
     "static/media/Figma.0f4098dc.svg": "/DSC-react/static/media/Figma.0f4098dc.svg",
     "static/media/Flutter.83219c09.svg": "/DSC-react/static/media/Flutter.83219c09.svg",
     "static/media/GCP.af3a9505.png": "/DSC-react/static/media/GCP.af3a9505.png",
+    "static/media/GoogleSans.css": "/DSC-react/static/media/GoogleSans-Regular.bec0591b.ttf",
     "static/media/JS.266bd9fb.png": "/DSC-react/static/media/JS.266bd9fb.png",
     "static/media/Jira.fc367bdf.png": "/DSC-react/static/media/Jira.fc367bdf.png",
     "static/media/MemberAnnotations.module.css": "/DSC-react/static/media/MemberAnnotationBG.2af428b2.png",
@@ -50,9 +53,9 @@
   },
   "entrypoints": [
     "static/js/runtime-main.cd31d771.js",
-    "static/css/2.a44c59e0.chunk.css",
-    "static/js/2.7b3973f1.chunk.js",
-    "static/css/main.514c2c29.chunk.css",
-    "static/js/main.ca177828.chunk.js"
+    "static/css/2.7099686e.chunk.css",
+    "static/js/2.ff3f9c84.chunk.js",
+    "static/css/main.35fa740d.chunk.css",
+    "static/js/main.cd0a8074.chunk.js"
   ]
 }
