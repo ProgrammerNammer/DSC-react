@@ -1,7 +1,7 @@
 
-[![Landing Page](./github-resources/landingpage.png)](https://programmernammer.github.io/DSC-react/)
+[![Landing Page](./github-resources/landingpage.png)](https://mark-gabriel-burguillos.github.io/DSC-react/)
 # DSC-react
-The website can be visited [through this link](https://programmernammer.github.io/DSC-react/). This repository represents a take on the DLSU DSC Organization website for recuiting onlooking members - the site represents the Organization's 
+The website can be visited [through this link](https://mark-gabriel-burguillos.github.io/DSC-react/). This repository represents a take on the DLSU DSC Organization website for recuiting onlooking members - the site represents the Organization's 
 
 ## Run in your Local Computer
 1. Download and extract the Github Repository to your local directory
